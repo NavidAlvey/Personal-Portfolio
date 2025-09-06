@@ -93,8 +93,8 @@ export default function About() {
           >
             <Avatar src={person.avatar} size="xl" />
             <Row gap="8" vertical="center">
-              <Icon onBackground="accent-weak" name="globe" />
-              {person.location}
+              <Icon onBackground="accent-weak" name="mapPin" />
+              Dallas, TX, USA
             </Row>
             {person.languages && person.languages.length > 0 && (
               <Row wrap gap="8">
@@ -206,15 +206,20 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
-                    <Row fillWidth horizontal="between" vertical="end" marginBottom="4">
+                    <Row fillWidth horizontal="between" vertical="start">
                       <Text id={experience.company} variant="heading-strong-l">
                         {experience.company}
                       </Text>
+                      <Column horizontal="end">
                       <Text variant="heading-default-xs" onBackground="neutral-weak">
                         {experience.timeframe}
                       </Text>
+                      <Text variant="heading-default-xs" onBackground="neutral-weak">
+                        {experience.workLocation}
+                      </Text>
+                    </Column>
                     </Row>
-                    <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
+                    <Text variant="body-default-m" onBackground="brand-weak">
                       {experience.role}
                     </Text>
                     <Column as="ul" gap="16">
