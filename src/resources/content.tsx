@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Navid",
+  lastName: "Alvey",
+  name: `Navid Alvey`,
+  role: "Software Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "navidalvey@gmail.com",
+  location: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Bangla"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -24,22 +24,32 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/NavidAlvey",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/navid-alvey/",
   },
   {
     name: "Email",
     icon: "email",
     link: `mailto:${person.email}`,
+  },
+  {
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/navidalvey/",
+  },
+  {
+    name: "Yelp",
+    icon: "yelp",
+    link: "https://www.yelp.com/user_details_reviews_self?userid=oxPbe4rm1Zd0glvI4gq0LQ",
+  },
+  {
+    name: "Spotify",
+    icon: "spotify",
+    link: "https://open.spotify.com/user/navidalvey?si=e2c3e0af9c254a30"
   },
 ];
 
@@ -81,7 +91,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from Dallas, TX, USA`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -98,9 +108,13 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I'm a software engineer with a passion for transforming comlex challenges intro
+        simple, elegant solutions using tools like Java and Python. I've worked with some
+        of the biggest companies in the world, learning and striving to deliver top tier service
+        and solutions to clients. 
+        <br /><br />
+        New experiences for my career, food, and travel are some of life's treasures I love to pursue.
+        I've showcased them throughout my portfolio so you'll get a good impression of who I am!
       </>
     ),
   },
@@ -109,17 +123,26 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "University of Texas at Dallas",
+        timeframe: "January - May 2025",
+        workLocation: "Richardson, TX",
+        role: "AI/ML Researcher",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Built <strong>scalable data pipelines</strong> in <strong>Python & Linux</strong> to 
+            automate processing of <strong>large-scale</strong> genomic datasets for DNA sequencing 
+            <strong> error-detection</strong>; reducing runtime by <strong>20%</strong> using
+            <strong> parallelization, optimized I/O,</strong> and <strong>memory management</strong>
+
+            {/*
+            Developed scalable Python/Linux data pipelines, cutting DNA sequencing error detection runtime by 20% for terabyte-scale datasets. 
+            Fine-tuned HuggingFace transformer models, improving model precision by 28% and raising F1 scores from 0.7 → 0.9. 
+          */}
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+           Experimented with <strong>HuggingFace transformer models</strong>; focusing on fine-tuning 
+            <strong> hyperparameters</strong> and <strong>embeddings</strong> to capture sequence dependencies;
+            improving base model precision by <strong>28%</strong> and <strong>0.7 - 0.9 F1</strong> score benchmarks
           </>,
         ],
         images: [
@@ -133,17 +156,65 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Charles Schwab",
+        timeframe: "June - August 2024",
+        workLocation: "Southlake, TX",
+        role: "Software Engineering Intern",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            {/*
+            Built and optimized REST APIs with Java/Spring Boot, contributing to 12+ completed features across 5 Agile sprints. Reduced API latency by 25%, positively impacting thousands of active wealth management clients daily. 
+            Strengthened code quality by implementing comprehensive unit testing and API validation with Postman. 
+          */}
+            Developed backend <strong>RESTful APIs</strong> with <strong>Java/Spring Boot </strong> 
+            integrating <strong>UI features</strong> for web apps within the Schwab Wealth Asset Management domain; 
+            closing <strong>12+ Jira tickets</strong> across <strong>5 sprints</strong> averaging
+            <strong> 6-8 story points</strong> each sprint
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Optimized <strong>backend</strong> performance using <strong>DevTools</strong> to identify 
+            <strong> API bottlenecks</strong> and high-traffic <strong>endpoints</strong>; resolving 
+            with solutions like implementing <strong>caching</strong> improvements resulting in 
+            <strong> ~25% latency</strong> reduction based on benchmark tests 
+          </>,
+          <>
+            Validated <strong>backend</strong> changes through comprehensive <strong>Java unit tests </strong> 
+            for service logic and  <strong>Postman HTTPS RESTful API endpoint testing</strong>, 
+            while documenting results in <strong>Jira's Zephyr</strong>, for traceability & compliance 
+            with <strong>Agile</strong> development  
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Toyota Financial Services",
+        timeframe: "May - August 2023",
+        workLocation: "Plano, TX",
+        role: "Software Engineering Intern",
+        achievements: [
+          <>
+          {/*
+          Developed a deterministic pricing engine in Python, reducing pricing error rates by ~10% and supporting 
+          1000s of financial product calculations. 
+          Automated ingestion pipelines processing 100+ external JSON payloads per run, streamlining workflows 
+          and saving hours of manual work. 
+          Optimized SQL queries in PostgreSQL to enhance pipeline performance and reduce report generation time. 
+        */}
+            Developed a deterministic financial pricing engine, in <strong>Python</strong> using 
+            <strong> Pandas & NumPy</strong>, implementing a parameterized algorithm from buyer & market 
+            parameters to provide product estimates; reducing pricing error by <strong>~10%</strong> based 
+            on the root mean squared error <strong>(RMSE)</strong> & mean absolute percentage error 
+            <strong>(MAPE)</strong> calculations compared against prior methods
+          </>,
+          <>
+            Implemented <strong>data ingestion</strong> & <strong>pipelining</strong> to authenticate external 
+            <strong>JSON RESTful APIs</strong>; ingesting <strong>100+ JSON payloads</strong> (per run) containing 
+            parameters - <strong>normalized & mapped</strong> to feature categories in a <strong>PostgreSQL </strong> 
+            database via  <strong>SQLAlchemy</strong> 
+          </>,
+          <>
+            Extracted parameters from database using <strong>SQL queries</strong> - joining & loading
+            into pricing pipeline for final product estimate
           </>,
         ],
         images: [],
