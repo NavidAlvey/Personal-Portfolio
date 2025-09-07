@@ -126,7 +126,7 @@ const about: About = {
         company: "University of Texas at Dallas",
         timeframe: "January - May 2025",
         workLocation: "Richardson, TX",
-        role: "AI/ML Researcher",
+        role: "AI/ML Researcher - Human Genome Sequencing",
         achievements: [
           <>
             Built <strong>scalable data pipelines</strong> in <strong>Python & Linux</strong> to 
@@ -148,8 +148,20 @@ const about: About = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/project-01/AppliedAI_ML.png",
+            alt: "Center For Applied AI & Machine Learning | University of Texas at Dallas",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/UTDCSBUILDING.jpg",
+            alt: "The Erik Johnson School of Engineering and Computer Science | University of Texas at Dallas",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/technology-ai.jpg",
+            alt: "Center for Machine Learning | University of Texas at Dallas",
             width: 16,
             height: 9,
           },
@@ -159,7 +171,7 @@ const about: About = {
         company: "Charles Schwab",
         timeframe: "June - August 2024",
         workLocation: "Southlake, TX",
-        role: "Software Engineering Intern",
+        role: "Software Engineering Intern - Wealth Asset Management",
         achievements: [
           <>
             {/*
@@ -184,13 +196,44 @@ const about: About = {
             with <strong>Agile</strong> development  
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/project-01/Schwabbies.jpg",
+            alt: "Fellow Schwabbie 'Schwinterns'",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/NavidAlveyTable.jpg",
+            alt: "Intro Day",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/MeNSiddy.JPEG",
+            alt: "Fellow Schwabbie on Volunteer Day",
+            width: 9,
+            height: 16,
+          },
+          {
+            src: "/images/projects/project-01/SchwabMerch.jpg",
+            alt: "Intern Merch",
+            width: 9,
+            height: 16,
+          },
+          {
+            src: "/images/projects/project-01/SchwabOffice.jpg",
+            alt: "Charles Schwab Office | Southlake, TX",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "Toyota Financial Services",
         timeframe: "May - August 2023",
         workLocation: "Plano, TX",
-        role: "Software Engineering Intern",
+        role: "Software Engineering Intern - Consumer Pricing & Finance Programs",
         achievements: [
           <>
           {/*
@@ -217,7 +260,32 @@ const about: About = {
             into pricing pipeline for final product estimate
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/project-01/ToyotaInterns.jpg",
+            alt: "List of IDS Departments Toyota Interns",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/KaizenInterns.jpg",
+            alt: "Interns with Tetsuo Ogawa, CEO of Toyota North America",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/DestinyInterns.JPEG",
+            alt: "Interns with Destiny Whitaker",
+            width: 9,
+            height: 16,
+          },
+          {
+            src: "/images/projects/project-01/Toyota-Main.jpg",
+            alt: "Toyota Office | Plano, TX",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
