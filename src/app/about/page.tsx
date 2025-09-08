@@ -11,6 +11,7 @@ import {
   Meta,
   Schema,
   Row,
+  Logo,
 } from "@once-ui-system/core";
 import { baseURL, about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
@@ -40,9 +41,9 @@ export default function About() {
       items: about.work.experiences.map((experience) => experience.company),
     },
     {
-      title: about.studies.title,
-      display: about.studies.display,
-      items: about.studies.institutions.map((institution) => institution.name),
+      title: about.education.title,
+      display: about.education.display,
+      items: about.education.institutions.map((institution) => institution.name),
     },
     {
       title: about.technical.title,
@@ -207,9 +208,16 @@ export default function About() {
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Row fillWidth horizontal="between" vertical="start">
+                    <Row gap="20" vertical="center"> {/* Wrap company name and logo */}
+                    <Logo
+                      dark
+                      icon={experience.logo}
+                      style={{ display: "inline-flex", width: "24px", height: "24px" }}
+                    />
                       <Text id={experience.company} variant="heading-strong-l">
                         {experience.company}
                       </Text>
+                    </Row>
                       <Column horizontal="end">
                       <Text variant="heading-default-xs" onBackground="neutral-weak">
                         {experience.timeframe}
@@ -262,21 +270,28 @@ export default function About() {
             </>
           )}
 
-          {about.studies.display && (
+          {about.education.display && (
             <>
-              <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m">
-                {about.studies.title}
+              <Heading as="h2" id={about.education.title} variant="display-strong-s" marginBottom="m">
+                {about.education.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
-                {about.studies.institutions.map((institution, index) => (
+                {about.education.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth gap="4">
+                  <Row gap="8" vertical="center" fillWidth> {/* Put name and logo together */}
                     <Text id={institution.name} variant="heading-strong-l">
                       {institution.name}
                     </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
-                      {institution.description}
-                    </Text>
-                  </Column>
+                    <Logo
+                      dark
+                      icon={institution.logo}
+                      style={{ display: "inline-flex", transform: "translateY(-5px)", width: "24px", height: "24px" }}
+                    />
+                  </Row>
+                  <Text variant="heading-default-xs" onBackground="neutral-weak">
+                    {institution.description}
+                  </Text>
+                </Column>
                 ))}
               </Column>
             </>
