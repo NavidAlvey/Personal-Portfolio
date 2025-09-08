@@ -103,7 +103,7 @@ export interface Home extends BasePageConfig {
 
 /**
  * About page configuration.
- * @description Configuration for the About page, including sections for table of contents, avatar, calendar, introduction, work experience, studies, and technical skills.
+ * @description Configuration for the About page, including sections for table of contents, avatar, calendar, introduction, work experience, education, and technical skills.
  */
 export interface About extends BasePageConfig {
   /** Table of contents configuration */
@@ -148,6 +148,8 @@ export interface About extends BasePageConfig {
       timeframe: string;
       /** Work location of employment */
       workLocation: string;
+      /** Company Logo */
+      logo: string;
       /** Role or job title */
       role: string;
       /** Achievements at the company */
@@ -165,18 +167,24 @@ export interface About extends BasePageConfig {
       }>;
     }>;
   };
-  /** Studies/education section */
-  studies: {
-    /** Whether to display studies section */
+  /** Education section */
+  education: {
+    /** Whether to display education section */
     display: boolean;
-    /** Title for the studies section */
+    /** Title for the education section */
     title: string;
     /** List of institutions attended */
     institutions: Array<{
       /** Institution name */
       name: string;
-      /** Description of studies */
+      /** Description of education */
       description: React.ReactNode;
+      /** Institution logo */
+      logo: string;
+      /** Institution Location */
+
+      /** Institution Timeframe */
+      
     }>;
   };
   /** Technical skills section */

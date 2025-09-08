@@ -59,7 +59,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Hi! Welcome to my personal portfolio</>,
   featured: {
     display: true,
     title: (
@@ -75,14 +75,8 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Alvey, a software engineer crafting custom and intuitive solutions for clients. 
+      After hours, I build my own projects and enjoy learning about new advancements in technology
     </>
   ),
 };
@@ -127,6 +121,7 @@ const about: About = {
         timeframe: "January - May 2025",
         workLocation: "Richardson, TX",
         role: "AI/ML Researcher - Human Genome Sequencing",
+        logo: "/trademarks/UTD-Logo.svg",
         achievements: [
           <>
             Built <strong>scalable data pipelines</strong> in <strong>Python & Linux</strong> to 
@@ -154,6 +149,12 @@ const about: About = {
             height: 9,
           },
           {
+            src: "/images/projects/project-01/UTDCS.png",
+            alt: "UTD CS Logo",
+            width: 9,
+            height: 9,
+          },
+          {
             src: "/images/projects/project-01/UTDCSBUILDING.jpg",
             alt: "The Erik Johnson School of Engineering and Computer Science | University of Texas at Dallas",
             width: 16,
@@ -172,6 +173,7 @@ const about: About = {
         timeframe: "June - August 2024",
         workLocation: "Southlake, TX",
         role: "Software Engineering Intern - Wealth Asset Management",
+        logo: "/trademarks/Schwab-Logo.svg",
         achievements: [
           <>
             {/*
@@ -234,6 +236,7 @@ const about: About = {
         timeframe: "May - August 2023",
         workLocation: "Plano, TX",
         role: "Software Engineering Intern - Consumer Pricing & Finance Programs",
+        logo: "/trademarks/Toyota-Logo.svg",
         achievements: [
           <>
           {/*
@@ -276,8 +279,8 @@ const about: About = {
           {
             src: "/images/projects/project-01/DestinyInterns.JPEG",
             alt: "Interns with Destiny Whitaker",
-            width: 9,
-            height: 16,
+            width: 16,
+            height: 9,
           },
           {
             src: "/images/projects/project-01/Toyota-Main.jpg",
@@ -289,17 +292,14 @@ const about: About = {
       },
     ],
   },
-  studies: {
+  education: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "University of Texas at Dallas",
+        description: <>Bachelor of Science, Computer Science</>,
+        logo: "/trademarks/UTD-Logo.svg",
       },
     ],
   },
