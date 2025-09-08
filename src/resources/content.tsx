@@ -298,9 +298,72 @@ const about: About = {
     institutions: [
       {
         name: "University of Texas at Dallas",
-        description: <>Bachelor of Science, Computer Science</>,
+        description: <>
+        Bachelor of Science, Computer Science 
+        <br></br>
+        UTD Academic Excellence Scholarship</>,
         logo: "/trademarks/UTD-Logo.svg",
+        institutionLocation: "Dallas, TX",
+        timeframe: "2021 - 2025",
+        images: [
+          {
+            src: "/images/projects/project-01/Diploma.png",
+            alt: "Navid Alvey UTD BS CS Diploma",
+            width: 9,
+            height: 9,
+          },
+          {
+          src: "/images/projects/project-01/UTDArial.jpg",
+          alt: "UTD Campus",
+          width: 16,
+          height: 9,
+          },
+          {
+            src: "/images/projects/project-01/UTDCSBUILDING.jpg",
+            alt: "UTD CS Building",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/UTDECSW.jpg",
+            alt: "UTD ECSW Building",
+            width: 16,
+            height: 9,
+          },
+        ]
       },
+      {
+        name: "Relevant Coursework",
+        description: <>
+        Advanced Data Structures & Algorithms, Software Engineering,
+        <br></br>
+        Project Management & Planning, Operating Systems, Linux/Unix,
+        <br></br>
+        Natural Language Processing, Machine Learning, Artifical Intelligence
+        </>,
+        logo: "",
+        institutionLocation: "",
+        timeframe: "",
+      },
+      {
+        name: "Organizations",
+        description: <>
+        Delta Epsilon Psi
+        <br></br>
+        Aaja Nachle
+        <br></br>
+        HackUTD
+        <br></br>
+        ACM Projects/Research
+        <br></br>
+        UI/UX Club
+        <br></br>
+        UTD EPICS
+        </>,
+        logo: "",
+        institutionLocation: "",
+        timeframe: "",
+      }
     ],
   },
   technical: {

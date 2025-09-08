@@ -278,7 +278,7 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.education.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth gap="4">
-                  <Row gap="8" vertical="center" fillWidth> {/* Put name and logo together */}
+                  <Row gap="8" vertical="start" fillWidth> {/* Put name and logo together */}
                     <Text id={institution.name} variant="heading-strong-l">
                       {institution.name}
                     </Text>
@@ -287,10 +287,41 @@ export default function About() {
                       icon={institution.logo}
                       style={{ display: "inline-flex", transform: "translateY(-5px)", width: "24px", height: "24px" }}
                     />
+                    <Column horizontal="end" vertical="start" style={{marginLeft:"auto", textAlign: "right"}}>
+                    <Text variant="heading-default-xs" onBackground="neutral-weak">
+                      {institution.timeframe}
+                    </Text>
+                    <Text variant="heading-default-xs" onBackground="neutral-weak">
+                      {institution.institutionLocation}
+                    </Text>
+                  </Column>
                   </Row>
-                  <Text variant="heading-default-xs" onBackground="neutral-weak">
+                  <Row vertical = "start">
+                    <Text variant="heading-default-xs" onBackground="neutral-weak">
                     {institution.description}
                   </Text>
+                  </Row>
+                  {institution.images && institution.images.length > 0 && (
+                      <Row fillWidth paddingTop="m" paddingLeft="0" gap="12" wrap>
+                        {institution.images.map((image, index) => (
+                          <Row
+                            key={index}
+                            border="neutral-medium"
+                            radius="m"
+                            minWidth={image.width}
+                            height={image.height}
+                          >
+                            <Media
+                              enlarge
+                              radius="m"
+                              sizes={image.width.toString()}
+                              alt={image.alt}
+                              src={image.src}
+                            />
+                          </Row>
+                        ))}
+                      </Row>
+                    )}
                 </Column>
                 ))}
               </Column>
