@@ -182,9 +182,20 @@ export interface About extends BasePageConfig {
       /** Institution logo */
       logo: string;
       /** Institution Location */
-
+      institutionLocation: string;
       /** Institution Timeframe */
-      
+      timeframe: string;
+      /** Images for Institution */
+      images?: Array<{
+        /** Image source path */
+        src: string;
+        /** Image alt text */
+        alt: string;
+        /** Image width ratio */
+        width: number;
+        /** Image height ratio */
+        height: number;
+      }>;
     }>;
   };
   /** Technical skills section */
