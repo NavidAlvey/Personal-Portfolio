@@ -122,6 +122,7 @@ const about: About = {
         workLocation: "Richardson, TX",
         role: "AI/ML Researcher - Human Genome Sequencing",
         logo: "/trademarks/UTD-Logo.svg",
+        link: "https://caiml.utdallas.edu/",
         achievements: [
           <>
             Built <strong>scalable data pipelines</strong> in <strong>Python & Linux</strong> to 
@@ -174,6 +175,7 @@ const about: About = {
         workLocation: "Southlake, TX",
         role: "Software Engineering Intern - Wealth Asset Management",
         logo: "/trademarks/Schwab-Logo.svg",
+        link: "https://www.schwabjobs.com/internship-academy",
         achievements: [
           <>
             {/*
@@ -237,6 +239,7 @@ const about: About = {
         workLocation: "Plano, TX",
         role: "Software Engineering Intern - Consumer Pricing & Finance Programs",
         logo: "/trademarks/Toyota-Logo.svg",
+        link: "https://careers.toyota.com/us/en/students",
         achievements: [
           <>
           {/*
@@ -299,12 +302,16 @@ const about: About = {
       {
         name: "University of Texas at Dallas",
         description: <>
-        Bachelor of Science, Computer Science 
+        <a href="https://catalog.utdallas.edu/2021/undergraduate/programs/ecs/computer-science" target="_blank" rel="noopener noreferrer">Bachelor of Science, Computer Science</a> 
         <br></br>
-        UTD Academic Excellence Scholarship</>,
+        <br></br>
+        <a href="https://jonsson-framework.utdallas.edu/" target="_blank" rel="noopener noreferrer">Erik Jonsson School of Engineering & Computer Science</a>
+        <br></br>
+        <a href="https://enroll.utdallas.edu/affordability/freshman-scholarships/academic-excellence-scholarship/" target="_blank" rel="noopener noreferrer">UTD Academic Excellence Scholarship</a></>,
         logo: "/trademarks/UTD-Logo.svg",
         institutionLocation: "Dallas, TX",
         timeframe: "2021 - 2025",
+        link: "https://cs.utdallas.edu/",
         images: [
           {
             src: "/images/projects/project-01/Diploma.png",
@@ -335,34 +342,51 @@ const about: About = {
       {
         name: "Relevant Coursework",
         description: <>
-        Advanced Data Structures & Algorithms, Software Engineering,
+        <a href="https://bpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/a/909/files/2023/07/4YEAR-CS-2021.pdf" target="_blank" rel="noopener noreferrer">DEGREE FLOW CHART</a>
         <br></br>
-        Project Management & Planning, Operating Systems, Linux/Unix,
         <br></br>
-        Natural Language Processing, Machine Learning, Artifical Intelligence
+        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4349" target="_blank" rel="noopener noreferrer">• Advanced Data Structures & Algorithms</a> 
+        <br></br>
+        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/se4381" target="_blank" rel="noopener noreferrer">• Project Management & Planning</a> 
+        <br></br>
+        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4395" target="_blank" rel="noopener noreferrer">• Natural Language Processing</a> 
+        <br></br>
+        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs3354" target="_blank" rel="noopener noreferrer">• Software Engineering</a>
+        <br></br>
+        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4365" target="_blank" rel="noopener noreferrer">• Artifical Intelligence</a>
+        <br></br>
+        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4348" target="_blank" rel="noopener noreferrer">• Operating Systems</a> 
+        <br></br>
+        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4375" target="_blank" rel="noopener noreferrer">• Machine Learning</a> 
+        <br></br>
+        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4336" target="_blank" rel="noopener noreferrer">• Advanced Java</a>
+        <br></br>
+        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs3377" target="_blank" rel="noopener noreferrer">• Linux/Unix</a>
         </>,
         logo: "",
         institutionLocation: "",
         timeframe: "",
+        link: "",
       },
       {
         name: "Organizations",
         description: <>
-        Delta Epsilon Psi
+        <a href="https://www.acmutd.co/" target="_blank" rel="noopener noreferrer">• ACM Projects/Research</a>
         <br></br>
-        Aaja Nachle
+        <a href="https://hackutd.co/" target="_blank" rel="noopener noreferrer">• HackUTD</a>
         <br></br>
-        HackUTD
+        <a href="https://epics.utdallas.edu/" target="_blank" rel="noopener noreferrer">• UTD EPICS</a>
         <br></br>
-        ACM Projects/Research
+        <a href="https://www.uxutd.com/" target="_blank" rel="noopener noreferrer">• UI/UX Club</a>
         <br></br>
-        UI/UX Club
+        <a href="https://www.instagram.com/aajanachledtx/?hl=en" target="_blank" rel="noopener noreferrer">• Aaja Nachle</a>
         <br></br>
-        UTD EPICS
+        <a href="https://www.instagram.com/depsi_utd/?hl=en" target="_blank" rel="noopener noreferrer">• Delta Epsilon Psi</a>
         </>,
         logo: "",
         institutionLocation: "",
         timeframe: "",
+        link: "",
       }
     ],
   },
