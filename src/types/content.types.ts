@@ -152,6 +152,8 @@ export interface About extends BasePageConfig {
       logo: string;
       /** Role or job title */
       role: string;
+      /** Link for more info */
+      link: string;
       /** Achievements at the company */
       achievements: React.ReactNode[];
       /** Images related to the experience */
@@ -185,6 +187,8 @@ export interface About extends BasePageConfig {
       institutionLocation: string;
       /** Institution Timeframe */
       timeframe: string;
+      /** Institution Link */
+      link?: string;
       /** Images for Institution */
       images?: Array<{
         /** Image source path */

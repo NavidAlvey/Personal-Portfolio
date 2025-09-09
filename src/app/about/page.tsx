@@ -17,6 +17,7 @@ import { baseURL, about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
+import Link from "next/link";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -214,9 +215,11 @@ export default function About() {
                       icon={experience.logo}
                       style={{ display: "inline-flex", width: "24px", height: "24px" }}
                     />
+                    <Link href={experience.link} target="_blank" rel="noopener noreferrer">
                       <Text id={experience.company} variant="heading-strong-l">
                         {experience.company}
                       </Text>
+                    </Link>
                     </Row>
                       <Column horizontal="end">
                       <Text variant="heading-default-xs" onBackground="neutral-weak">
@@ -279,9 +282,17 @@ export default function About() {
                 {about.education.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth gap="4">
                   <Row gap="8" vertical="start" fillWidth> {/* Put name and logo together */}
+                  {institution.link ? (
+                  <Link href={institution.link} target="_blank" rel="noopener noreferrer">
                     <Text id={institution.name} variant="heading-strong-l">
                       {institution.name}
                     </Text>
+                  </Link>
+                    ) : (
+                    <Text id={institution.name} variant="heading-strong-l">
+                      {institution.name}
+                    </Text>
+                    )}
                     <Logo
                       dark
                       icon={institution.logo}
