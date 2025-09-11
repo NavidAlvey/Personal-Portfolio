@@ -195,9 +195,32 @@ export default function About() {
           </Column>
 
           {about.intro.display && (
-            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
-              {about.intro.description}
-            </Column>
+            <>
+              <Column textVariant="body-default-l" fillWidth gap="m">
+                {about.intro.description}
+              </Column>
+              {about.intro.images && about.intro.images.length > 0 && (
+                <Row fillWidth paddingTop="m" paddingBottom="l" gap="12" wrap>
+                  {about.intro.images.map((image, index) => (
+                    <Row
+                      key={index}
+                      border="neutral-medium"
+                      radius="m"
+                      minWidth={image.width}
+                      height={image.height}
+                    >
+                      <Media
+                        enlarge
+                        radius="m"
+                        sizes={image.width.toString()}
+                        alt={image.alt}
+                        src={image.src}
+                      />
+                    </Row>
+                  ))}
+                </Row>
+              )}
+            </>
           )}
 
           {about.work.display && (

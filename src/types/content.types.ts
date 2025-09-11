@@ -133,6 +133,17 @@ export interface About extends BasePageConfig {
     title: string;
     /** Description of the introduction section */
     description: React.ReactNode;
+    /** Images of the introduction section */
+    images?: Array<{
+      /** Image source path */
+      src: string;
+      /** Image alt text */
+      alt: string;
+      /** Image width ratio */
+      width: number;
+      /** Image height ratio */
+      height: number;
+    }>;
   };
   /** Work experience section */
   work: {

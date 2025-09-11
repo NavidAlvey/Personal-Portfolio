@@ -103,14 +103,35 @@ const about: About = {
     description: (
       <>
         I'm a software engineer with a passion for transforming comlex challenges intro
-        simple, elegant solutions using tools like Java and Python. I've worked with some
-        of the biggest companies in the world, learning and striving to deliver top tier service
-        and solutions to clients. 
+        simple, elegant solutions using tools like Java and Python. I've worked with 
+        industry leading companies to deliver innovative software that serves millions of users worldwide. 
         <br /><br />
-        New experiences for my career, food, and travel are some of life's treasures I love to pursue.
-        I've showcased them throughout my portfolio so you'll get a good impression of who I am!
+        Beyond code, I'm driven by curiosity and growth; whether that's exploring emerging technologies, 
+        discovering new foods, or immersing myself in new cultures through travel. My 
+        portfolio captures both my technical journey and the experiences that fuel my creativity and 
+        perspective as an engineer.
       </>
     ),
+    images: [
+      {
+        src: "/images/gallery/Us-in-canoe.jpg",
+        alt: "Canoeing in Austin, TX",
+        width: 9,
+        height: 9,
+      },
+      {
+        src: "/images/gallery/Alvey-grad.jpg",
+        alt: "Alvey's Highschool Grad",
+        width: 9,
+        height: 9,
+      },
+      {
+        src: "/images/gallery/GrandCanyon.jpg",
+        alt: "Sightseeing at Grand Canyon, AZ",
+        width: 9,
+        height: 9,
+      },
+    ]
   },
   work: {
     display: true, // set to false to hide this section
@@ -392,7 +413,7 @@ const about: About = {
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
         title: "Figma",
