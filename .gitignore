@@ -50,6 +50,6 @@ pids
 *.pid.lock
 
 # Images
-.png
-.JPEG
-.jpg
+*.png
+*.JPEG
+*.jpg
