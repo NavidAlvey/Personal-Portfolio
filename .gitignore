@@ -48,3 +48,8 @@ pids
 *.pid
 *.seed
 *.pid.lock
+
+# Images
+.png
+.JPEG
+.jpg
