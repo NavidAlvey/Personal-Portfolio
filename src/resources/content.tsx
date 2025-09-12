@@ -120,9 +120,9 @@ const about: About = {
         height: 9,
       },
       {
-        src: "/images/gallery/Alvey-grad.jpg",
-        alt: "Alvey's Highschool Grad",
-        width: 9,
+        src: "/images/gallery/Fam-selfie.jpg",
+        alt: "Alvey's Family",
+        width: 12,
         height: 9,
       },
       {
@@ -498,48 +498,147 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
+      src: "/images/gallery/Fam-selfie.jpg",
+      alt: "Alvey's Family",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
+      src: "/images/gallery/HatThrow.JPEG",
+      alt: "High School Graduation Hat Throw",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
+      src: "/images/gallery/TimeSquare.jpg",
+      alt: "Time Square, NY",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
+      src: "/images/gallery/GrandStatue.jpg",
+      alt: "Grand Central Terminal Statue, NY",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
+      src: "/images/gallery/Alvey-grad.jpg",
+      alt: "High School Graduation",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
+      src: "/images/gallery/Rolex.jpg",
+      alt: "Rolex Building, NY",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/ReunionTower.jpg",
+      alt: "Reunion Tower, Dallas, TX",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
+      src: "/images/gallery/CanoeView.jpg",
+      alt: "Canoeing View in Austin, TX",
       orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Depsi-FA.JPG",
+      alt: "Fall Formal",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/JetSki.jpg",
+      alt: "JetSkis in Hudson River, NY",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/GrandCanyon.jpg",
+      alt: "Sightseeing at the Grand Canyon, AZ",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Utopia.jpg",
+      alt: "Utopia Pkway, NY",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Pier17NY.jpg",
+      alt: "Pier 17 NY",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Snow-Leo.jpg",
+      alt: "Alvey's cat in the snow",
+      orientation: "vertical",
+    },
+    //-------------------------------------------
+    {
+      src: "/images/gallery/FB-Pic.JPG",
+      alt: "2nd Family",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/PepsiCola.jpg",
+      alt: "PepsiCola Sign in NY",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/CanoePoint.jpg",
+      alt: "Canoeing in Austin, TX",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Nasa.JPG",
+      alt: "NASA Family Vaca, Houston, TX",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/StoneFace.jpg",
+      alt: "Stone Face, The Colony, TX",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Us-in-canoe.jpg",
+      alt: "Alvey and his brother canoeing in Austin, TX",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Hasif-wedding.jpg",
+      alt: "Cousin's Wedding in NY",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Skelligs.jpg",
+      alt: "Skelligs in Greenville, Dallas, TX",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/GrandClock.jpg",
+      alt: "Grand Central Station, NY",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Brothers-TimeSquare.jpg",
+      alt: "Alvey and his brother in Time Square, NY",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Leo-floor.jpg",
+      alt: "Alvey's cat Leo",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Promi-wedding.jpg",
+      alt: "Friend's Wedding, McKinney, TX",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Nola.jpg",
+      alt: "Nola, LA",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Peeyal-Bday-Dinner.jpg",
+      alt: "3 Musketeers",
+      orientation: "horizontal",
     },
   ],
 };
