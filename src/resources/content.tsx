@@ -414,16 +414,37 @@ const about: About = {
   technical: {
     display: true, // set to false to hide this section
     title: "Technical Skills",
+    // Add in a message about how the following are skills, languages, and technologies I've learned in the classroom and through personal projects
     skills: [
       {
-        title: "Figma",
+        title: "Languages",
         description: (
           <>Able to prototype in Figma with Once UI with unnatural speed.</>
         ),
-        tags: [
+        tags: [ // Java, Python, SQL, JavaScript, TypeScript, HTML/CSS
           {
-            name: "Figma",
-            icon: "figma",
+            name: "Java",
+            icon: "java",
+          },
+          {
+            name: "Python",
+            icon: "python",
+          },
+          {
+            name: "SQL",
+            icon: "sql",
+          },
+          {
+            name: "JavaScript",
+            icon: "javascript",
+          },
+          {
+            name: "HTML",
+            icon: "html",
+          },
+          {
+            name: "CSS",
+            icon: "css",
           },
         ],
         // optional: leave the array empty if you don't want to display images
@@ -443,34 +464,216 @@ const about: About = {
         ],
       },
       {
-        title: "Next.js",
+        title: "Frameworks & Libraries",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <><strong>Java:</strong></>
         ),
-        tags: [
+        tags: [// Java: Spring Boot, Javalin, Maven, Swagger,
           {
-            name: "JavaScript",
-            icon: "javascript",
+            name: "Spring Boot",
+            icon: "",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "Maven",
+            icon: "",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Javalin",
+            icon: "",
+          },
+          {
+            name: "Swagger",
+            icon: "",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "",
+        description: (
+          <><strong>Python:</strong></>
+        ),
+        tags: [ 
+        // Python: NLTK, Beautiful Soup, PyTorch, TensorFlow, Keras, Scikit-learn, Matplotlib, Pandas, SciPy
+          {
+            name: "NLTK",
+            icon: "",
+          },
+          {
+            name: "Beautiful Soup",
+            icon: "",
+          },
+          {
+            name: "PyTorch",
+            icon: "",
+          },
+          {
+            name: "TensorFlow",
+            icon: "",
+          },
+          {
+            name: "Keras",
+            icon: "",
+          },
+          {
+            name: "Scikit-learn",
+            icon: "",
+          },
+          {
+            name: "Matplotlib",
+            icon: "",
+          },
+          {
+            name: "Pandas",
+            icon: "",
+          },
+          {
+            name: "SciPy",
+            icon: "",
           },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      }, 
+      {
+        title: "",
+        description: (
+          <><strong>JavaScript:</strong></>
+        ),
+        tags: [// Javascript: TypeScript, React.js, Next.js, Node.js, NPM, Angular
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "TypeScript",
+            icon: "",
+          },
+          {
+            name: "React.js",
+            icon: "",
+          },
+          {
+            name: "Next.js",
+            icon: "",
+          },
+          {
+            name: "Node.js",
+            icon: "",
+          },
+          {
+            name: "NPM",
+            icon: "",
+          },
+          {
+            name: "Angular",
+            icon: "",
           },
         ],
-      },  
+        images: [],
+      },
+      {
+        title: "",
+        description: (
+          <><strong>Relational Database Management System:</strong></>
+        ),
+        tags: [// SQL: SQL, SQLite, PostgreSQL
+          {
+            name: "SQL",
+            icon: "",
+          },
+          {
+            name: "SQLite",
+            icon: "",
+          },
+          {
+            name: "PostgreSQL",
+            icon: "",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "Additional Developer Tools",
+        description: (
+          <><strong>Developement Tools & IDE</strong></>
+        ),
+        tags: [// Tools: VS Code, GitHub, Git, Jira, Agile, Scrum, Confluence, 
+                // BitBucket, DevTools, Docker, Kubernetes, Kafka, Postman, cURL, Jupyter Notebook, Anaconda, HuggingFace
+          {
+            name: "VS Code",
+            icon: "",
+          },
+          {
+            name: "DevTools",
+            icon: "",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "",
+        description: (
+          <><strong>Version Control & Repository Management</strong></>
+        ),
+        tags: [
+          {
+            name: "GitHub",
+            icon: "",
+          },
+          {
+            name: "Git",
+            icon: "",
+          },
+          {
+            name: "BitBucket",
+            icon: "",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "",
+        description: (
+          <><strong>Project Management & Software Development Life Cycle</strong></>
+        ),
+        tags: [
+          {
+            name: "Jira",
+            icon: "",
+          },
+          {
+            name: "Agile",
+            icon: "",
+          },
+          {
+            name: "Scrum",
+            icon: "",
+          },
+          {
+            name: "Confluence",
+            icon: "",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "",
+        description: (
+          <><strong>DevOps & Infrastructure</strong></>
+        ),
+        tags: [
+          {
+            name: "Docker",
+            icon: "",
+          },
+          {
+            name: "Kafka",
+            icon: "",
+          },
+          {
+            name: "Kubernetes",
+            icon: "",
+          },
+        ],
+        images: [],
+      }
     ],
   },
 };
