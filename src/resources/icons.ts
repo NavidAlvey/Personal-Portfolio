@@ -30,6 +30,22 @@ import {
   SiTypescript,
   SiHtml5,
   SiCss3,
+  SiSpringboot,
+  SiApachemaven,
+  SiComma,
+  SiSwagger,
+  SiPytorch,
+  SiTensorflow,
+  SiKeras,
+  SiScikitlearn,
+  SiPandas,
+  SiScipy,
+  SiSqlite,
+  SiPostgresql,
+  SiJira,
+  SiConfluence,
+  SiApachekafka,
+  SiKubernetes,
 } from "react-icons/si";
 
 import { 
@@ -49,7 +65,19 @@ import {
   FaJava,
   FaPython,
   FaDatabase,
+  FaCode,
+  FaReact,
+  FaNpm,
+  FaAngular,
+  FaGitAlt,
+  FaBitbucket,
+  FaDocker,
 } from "react-icons/fa6";
+
+import { TbLadle } from "react-icons/tb";
+import { FaNode } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+import { GiCycle } from "react-icons/gi";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -91,6 +119,35 @@ export const iconLibrary: Record<string, IconType> = {
   typescript: SiTypescript,
   html: SiHtml5,
   css: SiCss3,
+  springboot: SiSpringboot,
+  maven: SiApachemaven,
+  javalin: SiComma,
+  swagger: SiSwagger,
+  nltk: FaCode,
+  beautifulsoup: TbLadle,
+  pytorch: SiPytorch,
+  tensorflow: SiTensorflow,
+  keras: SiKeras,
+  scikitlearn: SiScikitlearn,
+  pandas: SiPandas,
+  scipy: SiScipy,
+  matplotlib: FaCode,
+  reactjs: FaReact,
+  nodejs: FaNode,
+  npm: FaNpm,
+  angular: FaAngular,
+  sqlite: SiSqlite,
+  postgresql: SiPostgresql,
+  vscode: VscVscode,
+  devtools: FaCode,
+  git: FaGitAlt,
+  bitbucket: FaBitbucket,
+  jira: SiJira,
+  agilescrum: GiCycle,
+  confluence: SiConfluence,
+  docker: FaDocker,
+  kafka: SiApachekafka,
+  kubernetes: SiKubernetes,
 };
 
 export type IconLibrary = typeof iconLibrary;
