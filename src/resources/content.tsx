@@ -448,42 +448,29 @@ const about: About = {
           },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
         title: "Frameworks & Libraries",
         description: (
-          <><strong>Java:</strong></>
+          <><strong>Java</strong></>
         ),
         tags: [// Java: Spring Boot, Javalin, Maven, Swagger,
           {
             name: "Spring Boot",
-            icon: "",
+            icon: "springboot",
           },
           {
             name: "Maven",
-            icon: "",
+            icon: "maven",
           },
           {
             name: "Javalin",
-            icon: "",
+            icon: "javalin",
           },
           {
             name: "Swagger",
-            icon: "",
+            icon: "swagger",
           },
         ],
         images: [],
@@ -491,45 +478,45 @@ const about: About = {
       {
         title: "",
         description: (
-          <><strong>Python:</strong></>
+          <><strong>Python</strong></>
         ),
         tags: [ 
         // Python: NLTK, Beautiful Soup, PyTorch, TensorFlow, Keras, Scikit-learn, Matplotlib, Pandas, SciPy
           {
             name: "NLTK",
-            icon: "",
+            icon: "nltk",
           },
           {
             name: "Beautiful Soup",
-            icon: "",
+            icon: "beautifulsoup",
           },
           {
             name: "PyTorch",
-            icon: "",
+            icon: "pytorch",
           },
           {
             name: "TensorFlow",
-            icon: "",
+            icon: "tensorflow",
           },
           {
             name: "Keras",
-            icon: "",
+            icon: "keras",
           },
           {
             name: "Scikit-learn",
-            icon: "",
+            icon: "scikitlearn",
           },
           {
             name: "Matplotlib",
-            icon: "",
+            icon: "matplotlib",
           },
           {
             name: "Pandas",
-            icon: "",
+            icon: "pandas",
           },
           {
             name: "SciPy",
-            icon: "",
+            icon: "scipy",
           },
         ],
         // optional: leave the array empty if you don't want to display images
@@ -538,32 +525,32 @@ const about: About = {
       {
         title: "",
         description: (
-          <><strong>JavaScript:</strong></>
+          <><strong>JavaScript</strong></>
         ),
         tags: [// Javascript: TypeScript, React.js, Next.js, Node.js, NPM, Angular
           {
             name: "TypeScript",
-            icon: "",
+            icon: "typescript",
           },
           {
             name: "React.js",
-            icon: "",
+            icon: "reactjs",
           },
           {
             name: "Next.js",
-            icon: "",
+            icon: "nextjs",
           },
           {
             name: "Node.js",
-            icon: "",
+            icon: "nodejs",
           },
           {
             name: "NPM",
-            icon: "",
+            icon: "npm",
           },
           {
             name: "Angular",
-            icon: "",
+            icon: "angular",
           },
         ],
         images: [],
@@ -571,20 +558,20 @@ const about: About = {
       {
         title: "",
         description: (
-          <><strong>Relational Database Management System:</strong></>
+          <><strong>RDBMS</strong></>
         ),
         tags: [// SQL: SQL, SQLite, PostgreSQL
           {
             name: "SQL",
-            icon: "",
+            icon: "sql",
           },
           {
             name: "SQLite",
-            icon: "",
+            icon: "sqlite",
           },
           {
             name: "PostgreSQL",
-            icon: "",
+            icon: "postgresql",
           },
         ],
         images: [],
@@ -598,11 +585,11 @@ const about: About = {
                 // BitBucket, DevTools, Docker, Kubernetes, Kafka, Postman, cURL, Jupyter Notebook, Anaconda, HuggingFace
           {
             name: "VS Code",
-            icon: "",
+            icon: "vscode",
           },
           {
             name: "DevTools",
-            icon: "",
+            icon: "devtools",
           },
         ],
         images: [],
@@ -615,15 +602,15 @@ const about: About = {
         tags: [
           {
             name: "GitHub",
-            icon: "",
+            icon: "github",
           },
           {
             name: "Git",
-            icon: "",
+            icon: "git",
           },
           {
             name: "BitBucket",
-            icon: "",
+            icon: "bitbucket",
           },
         ],
         images: [],
@@ -631,24 +618,20 @@ const about: About = {
       {
         title: "",
         description: (
-          <><strong>Project Management & Software Development Life Cycle</strong></>
+          <><strong>Project Management & SDLC</strong></>
         ),
         tags: [
           {
             name: "Jira",
-            icon: "",
+            icon: "jira",
           },
           {
-            name: "Agile",
-            icon: "",
-          },
-          {
-            name: "Scrum",
-            icon: "",
+            name: "Agile-Scrum",
+            icon: "agilescrum",
           },
           {
             name: "Confluence",
-            icon: "",
+            icon: "confluence",
           },
         ],
         images: [],
@@ -661,15 +644,15 @@ const about: About = {
         tags: [
           {
             name: "Docker",
-            icon: "",
+            icon: "docker",
           },
           {
             name: "Kafka",
-            icon: "",
+            icon: "kafka",
           },
           {
             name: "Kubernetes",
-            icon: "",
+            icon: "kubernetes",
           },
         ],
         images: [],
