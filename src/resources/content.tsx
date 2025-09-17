@@ -244,20 +244,14 @@ const about: About = {
             height: 9,
           },
           {
-            src: "/images/projects/project-01/MeNSiddy.JPEG",
-            alt: "Fellow Schwabbie on Volunteer Day",
-            width: 9,
-            height: 16,
-          },
-          {
-            src: "/images/projects/project-01/SchwabMerch.jpg",
-            alt: "Intern Merch",
-            width: 9,
-            height: 16,
-          },
-          {
             src: "/images/projects/project-01/SchwabOffice.jpg",
             alt: "Charles Schwab Office | Southlake, TX",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/MeNSiddy.JPEG",
+            alt: "Fellow Schwabbie on Volunteer Day",
             width: 16,
             height: 9,
           },
@@ -283,11 +277,11 @@ const about: About = {
             <strong> Pandas & NumPy</strong>, implementing a parameterized algorithm from buyer & market 
             parameters to provide product estimates; reducing pricing error by <strong>~10%</strong> based 
             on the root mean squared error <strong>(RMSE)</strong> & mean absolute percentage error 
-            <strong>(MAPE)</strong> calculations compared against prior methods
+            <strong> (MAPE)</strong> calculations compared against prior methods
           </>,
           <>
             Implemented <strong>data ingestion</strong> & <strong>pipelining</strong> to authenticate external 
-            <strong>JSON RESTful APIs</strong>; ingesting <strong>100+ JSON payloads</strong> (per run) containing 
+            <strong> JSON RESTful APIs</strong>; ingesting <strong>100+ JSON payloads</strong> (per run) containing 
             parameters - <strong>normalized & mapped</strong> to feature categories in a <strong>PostgreSQL </strong> 
             database via  <strong>SQLAlchemy</strong> 
           </>,
@@ -746,8 +740,8 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/TimeSquare.jpg",
-      alt: "Time Square, NY",
+      src: "/images/gallery/Nasa.JPG",
+      alt: "NASA Family Vaca, Houston, TX",
       orientation: "horizontal",
     },
     {
@@ -771,7 +765,7 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/CanoeView.jpg",
+      src: "/images/gallery/UltimatePortrait.JPEG",
       alt: "Canoeing View in Austin, TX",
       orientation: "vertical",
     },
@@ -801,6 +795,76 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
+      src: "/images/gallery/RailingPic.JPEG",
+      alt: "Grad pic on railing",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/WoodenElephants.jpeg",
+      alt: "Wooden Elephants in NY",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/AnotherFBPic.jpeg",
+      alt: "Another FB Pic",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Depsi-SP.JPG",
+      alt: "Spring Formal",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/LibraryNY.jpeg",
+      alt: "Cousins in a library, NY",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/FB-beach.jpg",
+      alt: "FB at the beach",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/ANBeachDay.jpg",
+      alt: "AN Beach Day",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/GladeLights.jpeg",
+      alt: "FB sees lights on Glade",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/TravisKanye.jpg",
+      alt: "Travis brings out Kanye in Rome",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/PensicolaBus.JPG",
+      alt: "Leo wearing a red sweater",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Us-and-stoneface.jpg",
+      alt: "Us and stoneface, The Colony",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/PensicolaBeach.JPG",
+      alt: "FB at Pensicola Beach",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/CoolAlvey.jpeg",
+      alt: "Sunglasses",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Promi-wedding.jpg",
+      alt: "Friend's Wedding, McKinney, TX",
+      orientation: "horizontal",
+    },
+    {
       src: "/images/gallery/Snow-Leo.jpg",
       alt: "Alvey's cat in the snow",
       orientation: "vertical",
@@ -822,8 +886,8 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/Nasa.JPG",
-      alt: "NASA Family Vaca, Houston, TX",
+      src: "/images/gallery/TimeSquare.jpg",
+      alt: "Time Square, NY",
       orientation: "horizontal",
     },
     {
@@ -832,8 +896,8 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/Us-in-canoe.jpg",
-      alt: "Alvey and his brother canoeing in Austin, TX",
+      src: "/images/gallery/blackLists.jpeg",
+      alt: "Anjali & Hemish Graduation",
       orientation: "horizontal",
     },
     {
@@ -862,8 +926,8 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/Promi-wedding.jpg",
-      alt: "Friend's Wedding, McKinney, TX",
+      src: "/images/gallery/ANPhotoshoot.jpeg",
+      alt: "Formal atire for AN Photoshoot",
       orientation: "horizontal",
     },
     {
@@ -874,6 +938,76 @@ const gallery: Gallery = {
     {
       src: "/images/gallery/Peeyal-Bday-Dinner.jpg",
       alt: "3 Musketeers",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/MIgrationTruck.jpeg",
+      alt: "The Great Elephant Migration",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Us-in-canoe.jpg",
+      alt: "Alvey and his brother canoeing in Austin, TX",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Monopoly.jpeg",
+      alt: "Monopoly Mural, NY",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/DJBooth.jpg",
+      alt: "At the DJ Booth",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/RedLeo.jpg",
+      alt: "Leo wearing a red sweater",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/BMWi8.jpeg",
+      alt: "Alvey in a BMW i8",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/AnjaliBday.jpeg",
+      alt: "Anjali's Birthday",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/ThanksgivingDinner.JPEG",
+      alt: "Thanksgiving Dinner with FB",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/HatThrowSky.JPEG",
+      alt: "Hat throw towards the sky",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/DoneFire.jpg",
+      alt: "Don Toliver Concert",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/CanoeView.jpg",
+      alt: "Canoeing View in Austin, TX",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/PensicolaHotel.JPG",
+      alt: "View from hotel in Pensicola",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/DonGlow.jpg",
+      alt: "Glow of Don Toliver Concert",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/projects/project-01/DestinyInterns.JPEG",
+      alt: "Toyota interns with recruiter Destiny Whitaker",
       orientation: "horizontal",
     },
   ],
