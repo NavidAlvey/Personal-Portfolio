@@ -9,7 +9,16 @@ const person: Person = {
   avatar: "/images/avatar.jpg",
   email: "navidalvey@gmail.com",
   location: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bangla"], // optional: Leave the array empty if you don't want to display languages
+  languages: [
+    {
+      language: "English",
+      flag: "🇺🇸",
+    },
+    {
+      language: "Bangla",
+      flag: "🇧🇩",
+    }
+  ], 
 };
 
 const newsletter: Newsletter = {
@@ -653,6 +662,47 @@ const about: About = {
           {
             name: "Kubernetes",
             icon: "kubernetes",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "",
+        description: (
+          <><strong>Microsoft Office Suite</strong></>
+        ),
+        tags: [
+          {
+            name: "Word",
+            icon: "word",
+          },
+          {
+            name: "Excel",
+            icon: "excel",
+          },
+          {
+            name: "PowerPoint",
+            icon: "powerpoint",
+          },
+          {
+            name: "Outlook",
+            icon: "outlook",
+          },
+          {
+            name: "OneDrive",
+            icon: "onedrive",
+          },
+          {
+            name: "Teams",
+            icon: "teams",
+          },
+          {
+            name: "Power BI",
+            icon: "powerbi",
+          },
+          {
+            name: "SSRS",
+            icon: "ssrs",
           },
         ],
         images: [],
