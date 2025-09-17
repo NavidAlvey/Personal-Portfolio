@@ -238,8 +238,8 @@ const about: About = {
             height: 9,
           },
           {
-            src: "/images/projects/project-01/NavidAlveyTable.jpg",
-            alt: "Intro Day",
+            src: "/images/projects/project-01/MeNSiddy.JPEG",
+            alt: "Fellow Schwabbie on Volunteer Day",
             width: 16,
             height: 9,
           },
@@ -250,8 +250,8 @@ const about: About = {
             height: 9,
           },
           {
-            src: "/images/projects/project-01/MeNSiddy.JPEG",
-            alt: "Fellow Schwabbie on Volunteer Day",
+            src: "/images/gallery/SchwabCert.jpeg",
+            alt: "Schwab Certificates of Internship Completion",
             width: 16,
             height: 9,
           },
@@ -760,8 +760,8 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/ReunionTower.jpg",
-      alt: "Reunion Tower, Dallas, TX",
+      src: "/images/gallery/DoneFire.jpg",
+      alt: "Don Toliver Concert",
       orientation: "horizontal",
     },
     {
@@ -775,8 +775,8 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/JetSki.jpg",
-      alt: "JetSkis in Hudson River, NY",
+      src: "/images/gallery/HemishDJ.jpeg",
+      alt: "Hemish DJing at Depsi Party",
       orientation: "vertical",
     },
     {
@@ -825,9 +825,9 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/ANBeachDay.jpg",
-      alt: "AN Beach Day",
-      orientation: "vertical",
+      src: "/images/gallery/blackLists.jpeg",
+      alt: "Anjali & Hemish Graduation",
+      orientation: "vertical", // change to vertical replace with horizontal
     },
     {
       src: "/images/gallery/GladeLights.jpeg",
@@ -865,8 +865,18 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/Snow-Leo.jpg",
+      src: "/images/gallery/Snow-Leo.JPG",
       alt: "Alvey's cat in the snow",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/projects/project-01/MeNSiddy.JPEG",
+      alt: "Schwabbies",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/HatThrowBridge.JPEG",
+      alt: "Hat throw under bridge",
       orientation: "vertical",
     },
     //-------------------------------------------
@@ -896,9 +906,9 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/blackLists.jpeg",
-      alt: "Anjali & Hemish Graduation",
-      orientation: "horizontal",
+      src: "/images/gallery/ANBeachDay.jpg",
+      alt: "AN Beach Day",
+      orientation: "horizontal", // change to horizontal and replace with vertical
     },
     {
       src: "/images/gallery/Hasif-wedding.jpg",
@@ -941,7 +951,7 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/MIgrationTruck.jpeg",
+      src: "/images/gallery/MigrationTruck.jpeg",
       alt: "The Great Elephant Migration",
       orientation: "vertical",
     },
@@ -973,7 +983,7 @@ const gallery: Gallery = {
     {
       src: "/images/gallery/AnjaliBday.jpeg",
       alt: "Anjali's Birthday",
-      orientation: "vertical",
+      orientation: "vertical", // change to horizontal and replace with vertical
     },
     {
       src: "/images/gallery/ThanksgivingDinner.JPEG",
@@ -986,8 +996,8 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/DoneFire.jpg",
-      alt: "Don Toliver Concert",
+      src: "/images/projects/project-01/DestinyInterns.JPEG",
+      alt: "Toyota interns with recruiter Destiny Whitaker",
       orientation: "horizontal",
     },
     {
@@ -1006,8 +1016,18 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/projects/project-01/DestinyInterns.JPEG",
-      alt: "Toyota interns with recruiter Destiny Whitaker",
+      src: "/images/gallery/ReunionTower.jpg",
+      alt: "Reunion Tower, Dallas, TX",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/JetSki.jpg",
+      alt: "JetSkis in Hudson River, NY",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/projects/project-01/UTDArial.jpg",
+      alt: "UTD Campus Arial View",
       orientation: "horizontal",
     },
   ],
