@@ -99,14 +99,14 @@ export default function About() {
               Dallas, TX, USA
             </Row>
             {person.languages && person.languages.length > 0 && (
-              <Row wrap gap="8">
-                {person.languages.map((language, index) => (
-                  <Tag key={index} size="l">
-                    {language}
-                  </Tag>
-                ))}
-              </Row>
-            )}
+            <Row wrap gap="8">
+            {person.languages.map((language, index) => (
+              <Tag key={index} size="l">
+                {language.flag} {language.language}
+              </Tag>
+            ))}
+          </Row>
+)}
           </Column>
         )}
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>

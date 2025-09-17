@@ -20,6 +20,7 @@ import {
   PiGridFourDuotone,
   PiBookBookmarkDuotone,
   PiImageDuotone,
+  PiMicrosoftOutlookLogoFill,
 } from "react-icons/pi";
 
 import {
@@ -72,12 +73,17 @@ import {
   FaGitAlt,
   FaBitbucket,
   FaDocker,
+  FaFileExcel,
+  FaFilePowerpoint,
 } from "react-icons/fa6";
 
 import { TbLadle } from "react-icons/tb";
-import { FaNode } from "react-icons/fa";
+import { FaFileWord, FaNode } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
-import { GiCycle } from "react-icons/gi";
+import { GiCycle, GiSpiralTentacle } from "react-icons/gi";
+import { ImOnedrive } from "react-icons/im";
+import { BsFileBarGraph, BsMicrosoftTeams } from "react-icons/bs";
+import { LiaFlagUsaSolid } from "react-icons/lia";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -148,6 +154,14 @@ export const iconLibrary: Record<string, IconType> = {
   docker: FaDocker,
   kafka: SiApachekafka,
   kubernetes: SiKubernetes,
+  word: FaFileWord,
+  excel: FaFileExcel,
+  powerpoint: FaFilePowerpoint,
+  outlook: PiMicrosoftOutlookLogoFill,
+  onedrive: ImOnedrive,
+  teams: BsMicrosoftTeams,
+  powerbi: BsFileBarGraph,
+  ssrs: GiSpiralTentacle,
 };
 
 export type IconLibrary = typeof iconLibrary;
