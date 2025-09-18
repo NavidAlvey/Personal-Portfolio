@@ -860,8 +860,8 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/Promi-wedding.jpg",
-      alt: "Friend's Wedding, McKinney, TX",
+      src: "/images/gallery/FBArcade2.jpeg",
+      alt: "FB goes to the arcade!",
       orientation: "horizontal",
     },
     {
@@ -877,6 +877,26 @@ const gallery: Gallery = {
     {
       src: "/images/gallery/HatThrowBridge.JPEG",
       alt: "Hat throw under bridge",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Nasa-portrait.jpg",
+      alt: "Alvey in astronaut suit",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Leo-bed.jpg",
+      alt: "Leo on bed",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/projects/project-01/UTDArial.jpg",
+      alt: "UTD Campus Arial View",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/WinterBoys.JPG",
+      alt: "FB Boys in Winter",
       orientation: "vertical",
     },
     //-------------------------------------------
@@ -981,9 +1001,9 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/AnjaliBday.jpeg",
-      alt: "Anjali's Birthday",
-      orientation: "vertical", // change to horizontal and replace with vertical
+      src: "/images/gallery/FBboysPic.JPG",
+      alt: "FB Boys Pic",
+      orientation: "vertical",
     },
     {
       src: "/images/gallery/ThanksgivingDinner.JPEG",
@@ -1026,8 +1046,28 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/projects/project-01/UTDArial.jpg",
-      alt: "UTD Campus Arial View",
+      src: "/images/gallery/FBArcade1.jpeg",
+      alt: "FB goes to the arcade!",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/NibirHead.JPG",
+      alt: "FB's holy head",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/AnjaliBday.jpeg",
+      alt: "Anjali's Birthday",
+      orientation: "horizontal", 
+    },
+    {
+      src: "/images/gallery/NewYears.jpeg",
+      alt: "Celebrating New Years, Downtown Fort Worth",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Promi-wedding.jpg",
+      alt: "Friend's Wedding, McKinney, TX",
       orientation: "horizontal",
     },
   ],
