@@ -58,18 +58,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           <Column flex={7} gap="16">
             {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
             {description?.trim() && (
-              <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
+              <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak" style={{ whiteSpace: 'pre-line' }}>
                 {description}
               </Text>
             )}
             <Flex gap="24" wrap>
               {content?.trim() && (
                 <SmartLink
-                  suffixIcon="arrowRight"
+                  suffixIcon="arrowUpRight"
                   style={{ margin: "0", width: "fit-content" }}
                   href={href}
                 >
-                  <Text variant="body-default-s">Read case study</Text>
+                  <Text variant="body-default-xl">Project Insights</Text>
                 </SmartLink>
               )}
               {link && (
@@ -78,7 +78,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                   style={{ margin: "0", width: "fit-content" }}
                   href={link}
                 >
-                  <Text variant="body-default-s">View project</Text>
+                  <Text variant="body-default-xl">Project's GitHub</Text>
                 </SmartLink>
               )}
             </Flex>
