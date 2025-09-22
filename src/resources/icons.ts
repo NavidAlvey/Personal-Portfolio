@@ -1,89 +1,89 @@
-import { IconType } from "react-icons";
+import type { IconType } from "react-icons";
 
 import {
-  HiArrowUpRight,
-  HiOutlineLink,
-  HiArrowTopRightOnSquare,
-  HiEnvelope,
-  HiCalendarDays,
   HiArrowRight,
+  HiArrowTopRightOnSquare,
+  HiArrowUpRight,
+  HiCalendarDays,
+  HiEnvelope,
+  HiOutlineDocument,
   HiOutlineEye,
   HiOutlineEyeSlash,
-  HiOutlineDocument,
+  HiOutlineLink,
   HiOutlineMapPin,
   HiOutlineRocketLaunch,
 } from "react-icons/hi2";
 
 import {
-  PiHouseDuotone,
-  PiUserCircleDuotone,
-  PiGridFourDuotone,
   PiBookBookmarkDuotone,
+  PiGridFourDuotone,
+  PiHouseDuotone,
   PiImageDuotone,
   PiMicrosoftOutlookLogoFill,
+  PiUserCircleDuotone,
 } from "react-icons/pi";
 
 import {
-  SiJavascript,
-  SiNextdotjs,
-  SiFigma,
-  SiSupabase,
-  SiTypescript,
-  SiHtml5,
-  SiCss3,
-  SiSpringboot,
+  SiApachekafka,
   SiApachemaven,
   SiComma,
-  SiSwagger,
-  SiPytorch,
-  SiTensorflow,
-  SiKeras,
-  SiScikitlearn,
-  SiPandas,
-  SiScipy,
-  SiSqlite,
-  SiPostgresql,
-  SiJira,
   SiConfluence,
-  SiApachekafka,
+  SiCss3,
+  SiFigma,
+  SiHtml5,
+  SiJavascript,
+  SiJira,
+  SiKeras,
   SiKubernetes,
+  SiNextdotjs,
+  SiPandas,
+  SiPostgresql,
+  SiPytorch,
+  SiScikitlearn,
+  SiScipy,
+  SiSpringboot,
+  SiSqlite,
+  SiSupabase,
+  SiSwagger,
+  SiTensorflow,
+  SiTypescript,
 } from "react-icons/si";
 
-import { 
-  FaDiscord, 
-  FaGithub, 
-  FaLinkedin, 
-  FaX, 
-  FaSpotify, 
-  FaYelp, 
-  FaInstagram, 
-  FaXTwitter, 
-  FaFacebook, 
-  FaPinterest, 
-  FaWhatsapp, 
-  FaReddit, 
-  FaTelegram, 
-  FaJava,
-  FaPython,
-  FaDatabase,
-  FaCode,
-  FaReact,
-  FaNpm,
+import {
   FaAngular,
-  FaGitAlt,
   FaBitbucket,
+  FaCode,
+  FaDatabase,
+  FaDiscord,
   FaDocker,
+  FaFacebook,
   FaFileExcel,
   FaFilePowerpoint,
+  FaGitAlt,
+  FaGithub,
+  FaInstagram,
+  FaJava,
+  FaLinkedin,
+  FaNpm,
+  FaPinterest,
+  FaPython,
+  FaReact,
+  FaReddit,
+  FaSpotify,
+  FaTelegram,
+  FaWhatsapp,
+  FaX,
+  FaXTwitter,
+  FaYelp,
 } from "react-icons/fa6";
 
-import { TbLadle } from "react-icons/tb";
+import { BsFileBarGraph, BsMicrosoftTeams } from "react-icons/bs";
 import { FaFileWord, FaNode } from "react-icons/fa";
-import { VscVscode } from "react-icons/vsc";
 import { GiCycle, GiSpiralTentacle } from "react-icons/gi";
 import { ImOnedrive } from "react-icons/im";
-import { BsFileBarGraph, BsMicrosoftTeams } from "react-icons/bs";
 import { LiaFlagUsaSolid } from "react-icons/lia";
+import { TbLadle } from "react-icons/tb";
+import { VscVscode } from "react-icons/vsc";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,

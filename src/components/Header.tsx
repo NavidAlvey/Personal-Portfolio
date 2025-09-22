@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 
 import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
 
-import { routes, display, person, about, blog, work, gallery } from "@/resources";
-import { ThemeToggle } from "./ThemeToggle";
+import { about, blog, display, gallery, person, routes, work } from "@/resources";
 import styles from "./Header.module.scss";
+import { ThemeToggle } from "./ThemeToggle";
 
 type TimeDisplayProps = {
   timeZone: string;

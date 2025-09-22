@@ -1,3 +1,6 @@
+import TableOfContents from "@/components/about/TableOfContents";
+import styles from "@/components/about/about.module.scss";
+import { about, baseURL, person, social } from "@/resources";
 import {
   Avatar,
   Button,
@@ -5,19 +8,16 @@ import {
   Heading,
   Icon,
   IconButton,
+  Logo,
   Media,
+  Meta,
+  Row,
+  Schema,
   Tag,
   Text,
-  Meta,
-  Schema,
-  Row,
-  Logo,
 } from "@once-ui-system/core";
-import { baseURL, about, person, social } from "@/resources";
-import TableOfContents from "@/components/about/TableOfContents";
-import styles from "@/components/about/about.module.scss";
-import React from "react";
 import Link from "next/link";
+import React from "react";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -99,14 +99,14 @@ export default function About() {
               Dallas, TX, USA
             </Row>
             {person.languages && person.languages.length > 0 && (
-            <Row wrap gap="8">
-            {person.languages.map((language, index) => (
-              <Tag key={index} size="l">
-                {language.flag} {language.language}
-              </Tag>
-            ))}
-          </Row>
-)}
+              <Row wrap gap="8">
+                {person.languages.map((language, index) => (
+                  <Tag key={index} size="l">
+                    {language.flag} {language.language}
+                  </Tag>
+                ))}
+              </Row>
+            )}
           </Column>
         )}
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
@@ -232,26 +232,28 @@ export default function About() {
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Row fillWidth horizontal="between" vertical="start">
-                    <Row gap="20" vertical="center"> {/* Wrap company name and logo */}
-                    <Logo
-                      dark
-                      icon={experience.logo}
-                      style={{ display: "inline-flex", width: "24px", height: "24px" }}
-                    />
-                    <Link href={experience.link} target="_blank" rel="noopener noreferrer">
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
-                    </Link>
-                    </Row>
+                      <Row gap="20" vertical="center">
+                        {" "}
+                        {/* Wrap company name and logo */}
+                        <Logo
+                          dark
+                          icon={experience.logo}
+                          style={{ display: "inline-flex", width: "24px", height: "24px" }}
+                        />
+                        <Link href={experience.link} target="_blank" rel="noopener noreferrer">
+                          <Text id={experience.company} variant="heading-strong-l">
+                            {experience.company}
+                          </Text>
+                        </Link>
+                      </Row>
                       <Column horizontal="end">
-                      <Text variant="heading-default-xs" onBackground="neutral-weak">
-                        {experience.timeframe}
-                      </Text>
-                      <Text variant="heading-default-xs" onBackground="neutral-weak">
-                        {experience.workLocation}
-                      </Text>
-                    </Column>
+                        <Text variant="heading-default-xs" onBackground="neutral-weak">
+                          {experience.timeframe}
+                        </Text>
+                        <Text variant="heading-default-xs" onBackground="neutral-weak">
+                          {experience.workLocation}
+                        </Text>
+                      </Column>
                     </Row>
                     <Text variant="body-default-m" onBackground="brand-weak">
                       {experience.role}
@@ -298,44 +300,60 @@ export default function About() {
 
           {about.education.display && (
             <>
-              <Heading as="h2" id={about.education.title} variant="display-strong-s" marginBottom="m">
+              <Heading
+                as="h2"
+                id={about.education.title}
+                variant="display-strong-s"
+                marginBottom="m"
+              >
                 {about.education.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
                 {about.education.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth gap="4">
-                  <Row gap="8" vertical="start" fillWidth> {/* Put name and logo together */}
-                  {institution.link ? (
-                  <Link href={institution.link} target="_blank" rel="noopener noreferrer">
-                    <Text id={institution.name} variant="heading-strong-l">
-                      {institution.name}
-                    </Text>
-                  </Link>
-                    ) : (
-                    <Text id={institution.name} variant="heading-strong-l">
-                      {institution.name}
-                    </Text>
-                    )}
-                    <Logo
-                      dark
-                      icon={institution.logo}
-                      style={{ display: "inline-flex", transform: "translateY(-5px)", width: "24px", height: "24px" }}
-                    />
-                    <Column horizontal="end" vertical="start" style={{marginLeft:"auto", textAlign: "right"}}>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
-                      {institution.timeframe}
-                    </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
-                      {institution.institutionLocation}
-                    </Text>
-                  </Column>
-                  </Row>
-                  <Row vertical = "start">
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
-                    {institution.description}
-                  </Text>
-                  </Row>
-                  {institution.images && institution.images.length > 0 && (
+                    <Row gap="8" vertical="start" fillWidth>
+                      {" "}
+                      {/* Put name and logo together */}
+                      {institution.link ? (
+                        <Link href={institution.link} target="_blank" rel="noopener noreferrer">
+                          <Text id={institution.name} variant="heading-strong-l">
+                            {institution.name}
+                          </Text>
+                        </Link>
+                      ) : (
+                        <Text id={institution.name} variant="heading-strong-l">
+                          {institution.name}
+                        </Text>
+                      )}
+                      <Logo
+                        dark
+                        icon={institution.logo}
+                        style={{
+                          display: "inline-flex",
+                          transform: "translateY(-5px)",
+                          width: "24px",
+                          height: "24px",
+                        }}
+                      />
+                      <Column
+                        horizontal="end"
+                        vertical="start"
+                        style={{ marginLeft: "auto", textAlign: "right" }}
+                      >
+                        <Text variant="heading-default-xs" onBackground="neutral-weak">
+                          {institution.timeframe}
+                        </Text>
+                        <Text variant="heading-default-xs" onBackground="neutral-weak">
+                          {institution.institutionLocation}
+                        </Text>
+                      </Column>
+                    </Row>
+                    <Row vertical="start">
+                      <Text variant="heading-default-xs" onBackground="neutral-weak">
+                        {institution.description}
+                      </Text>
+                    </Row>
+                    {institution.images && institution.images.length > 0 && (
                       <Row fillWidth paddingTop="m" paddingLeft="0" gap="12" wrap>
                         {institution.images.map((image, index) => (
                           <Row
@@ -356,7 +374,7 @@ export default function About() {
                         ))}
                       </Row>
                     )}
-                </Column>
+                  </Column>
                 ))}
               </Column>
             </>

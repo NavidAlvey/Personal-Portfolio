@@ -1,10 +1,10 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import type { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Navid",
   lastName: "Alvey",
-  name: `Navid Alvey`,
+  name: "Navid Alvey",
   role: "Software Engineer",
   avatar: "/images/avatar.jpg",
   email: "navidalvey@gmail.com",
@@ -17,8 +17,8 @@ const person: Person = {
     {
       language: "Bangla",
       flag: "🇧🇩",
-    }
-  ], 
+    },
+  ],
 };
 
 const newsletter: Newsletter = {
@@ -58,7 +58,7 @@ const social: Social = [
   {
     name: "Spotify",
     icon: "spotify",
-    link: "https://open.spotify.com/user/navidalvey?si=e2c3e0af9c254a30"
+    link: "https://open.spotify.com/user/navidalvey?si=e2c3e0af9c254a30",
   },
 ];
 
@@ -84,8 +84,8 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Alvey, a software engineer crafting custom and intuitive solutions for clients. 
-      After hours, I build my own projects and enjoy learning about new advancements in technology
+      I'm Alvey, a software engineer crafting custom and intuitive solutions for clients. After
+      hours, I build my own projects and enjoy learning about new advancements in technology
     </>
   ),
 };
@@ -111,13 +111,14 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        I'm a software engineer with a passion for transforming comlex challenges intro
-        simple, elegant solutions using tools like Java and Python. I've worked with 
-        industry leading companies to deliver innovative software that serves millions of users worldwide. 
-        <br /><br />
-        Beyond code, I'm driven by curiosity and growth; whether that's exploring emerging technologies, 
-        discovering new foods, or immersing myself in new cultures through travel. My 
-        portfolio captures both my technical journey and the experiences that fuel my creativity and 
+        I'm a software engineer with a passion for transforming comlex challenges intro simple,
+        elegant solutions using tools like Java and Python. I've worked with industry leading
+        companies to deliver innovative software that serves millions of users worldwide.
+        <br />
+        <br />
+        Beyond code, I'm driven by curiosity and growth; whether that's exploring emerging
+        technologies, discovering new foods, or immersing myself in new cultures through travel. My
+        portfolio captures both my technical journey and the experiences that fuel my creativity and
         perspective as an engineer.
       </>
     ),
@@ -140,7 +141,7 @@ const about: About = {
         width: 9,
         height: 9,
       },
-    ]
+    ],
   },
   work: {
     display: true, // set to false to hide this section
@@ -155,20 +156,21 @@ const about: About = {
         link: "https://caiml.utdallas.edu/",
         achievements: [
           <>
-            Built <strong>scalable data pipelines</strong> in <strong>Python & Linux</strong> to 
-            automate processing of <strong>large-scale</strong> genomic datasets for DNA sequencing 
+            Built <strong>scalable data pipelines</strong> in <strong>Python & Linux</strong> to
+            automate processing of <strong>large-scale</strong> genomic datasets for DNA sequencing
             <strong> error-detection</strong>; reducing runtime by <strong>20%</strong> using
             <strong> parallelization, optimized I/O,</strong> and <strong>memory management</strong>
-
             {/*
             Developed scalable Python/Linux data pipelines, cutting DNA sequencing error detection runtime by 20% for terabyte-scale datasets. 
             Fine-tuned HuggingFace transformer models, improving model precision by 28% and raising F1 scores from 0.7 → 0.9. 
           */}
           </>,
           <>
-           Experimented with <strong>HuggingFace transformer models</strong>; focusing on fine-tuning 
-            <strong> hyperparameters</strong> and <strong>embeddings</strong> to capture sequence dependencies;
-            improving base model precision by <strong>28%</strong> and <strong>0.7 - 0.9 F1</strong> score benchmarks
+            Experimented with <strong>HuggingFace transformer models</strong>; focusing on
+            fine-tuning
+            <strong> hyperparameters</strong> and <strong>embeddings</strong> to capture sequence
+            dependencies; improving base model precision by <strong>28%</strong> and{" "}
+            <strong>0.7 - 0.9 F1</strong> score benchmarks
           </>,
         ],
         images: [
@@ -212,22 +214,25 @@ const about: About = {
             Built and optimized REST APIs with Java/Spring Boot, contributing to 12+ completed features across 5 Agile sprints. Reduced API latency by 25%, positively impacting thousands of active wealth management clients daily. 
             Strengthened code quality by implementing comprehensive unit testing and API validation with Postman. 
           */}
-            Developed backend <strong>RESTful APIs</strong> with <strong>Java/Spring Boot </strong> 
-            integrating <strong>UI features</strong> for web apps within the Schwab Wealth Asset Management domain; 
-            closing <strong>12+ Jira tickets</strong> across <strong>5 sprints</strong> averaging
+            Developed backend <strong>RESTful APIs</strong> with <strong>Java/Spring Boot </strong>
+            integrating <strong>UI features</strong> for web apps within the Schwab Wealth Asset
+            Management domain; closing <strong>12+ Jira tickets</strong> across{" "}
+            <strong>5 sprints</strong> averaging
             <strong> 6-8 story points</strong> each sprint
           </>,
           <>
-            Optimized <strong>backend</strong> performance using <strong>DevTools</strong> to identify 
-            <strong> API bottlenecks</strong> and high-traffic <strong>endpoints</strong>; resolving 
-            with solutions like implementing <strong>caching</strong> improvements resulting in 
-            <strong> ~25% latency</strong> reduction based on benchmark tests 
+            Optimized <strong>backend</strong> performance using <strong>DevTools</strong> to
+            identify
+            <strong> API bottlenecks</strong> and high-traffic <strong>endpoints</strong>; resolving
+            with solutions like implementing <strong>caching</strong> improvements resulting in
+            <strong> ~25% latency</strong> reduction based on benchmark tests
           </>,
           <>
-            Validated <strong>backend</strong> changes through comprehensive <strong>Java unit tests </strong> 
-            for service logic and  <strong>Postman HTTPS RESTful API endpoint testing</strong>, 
-            while documenting results in <strong>Jira's Zephyr</strong>, for traceability & compliance 
-            with <strong>Agile</strong> development  
+            Validated <strong>backend</strong> changes through comprehensive{" "}
+            <strong>Java unit tests </strong>
+            for service logic and <strong>Postman HTTPS RESTful API endpoint testing</strong>, while
+            documenting results in <strong>Jira's Zephyr</strong>, for traceability & compliance
+            with <strong>Agile</strong> development
           </>,
         ],
         images: [
@@ -266,28 +271,31 @@ const about: About = {
         link: "https://careers.toyota.com/us/en/students",
         achievements: [
           <>
-          {/*
+            {/*
           Developed a deterministic pricing engine in Python, reducing pricing error rates by ~10% and supporting 
           1000s of financial product calculations. 
           Automated ingestion pipelines processing 100+ external JSON payloads per run, streamlining workflows 
           and saving hours of manual work. 
           Optimized SQL queries in PostgreSQL to enhance pipeline performance and reduce report generation time. 
         */}
-            Developed a deterministic financial pricing engine, in <strong>Python</strong> using 
-            <strong> Pandas & NumPy</strong>, implementing a parameterized algorithm from buyer & market 
-            parameters to provide product estimates; reducing pricing error by <strong>~10%</strong> based 
-            on the root mean squared error <strong>(RMSE)</strong> & mean absolute percentage error 
+            Developed a deterministic financial pricing engine, in <strong>Python</strong> using
+            <strong> Pandas & NumPy</strong>, implementing a parameterized algorithm from buyer &
+            market parameters to provide product estimates; reducing pricing error by{" "}
+            <strong>~10%</strong> based on the root mean squared error <strong>(RMSE)</strong> &
+            mean absolute percentage error
             <strong> (MAPE)</strong> calculations compared against prior methods
           </>,
           <>
-            Implemented <strong>data ingestion</strong> & <strong>pipelining</strong> to authenticate external 
-            <strong> JSON RESTful APIs</strong>; ingesting <strong>100+ JSON payloads</strong> (per run) containing 
-            parameters - <strong>normalized & mapped</strong> to feature categories in a <strong>PostgreSQL </strong> 
-            database via  <strong>SQLAlchemy</strong> 
+            Implemented <strong>data ingestion</strong> & <strong>pipelining</strong> to
+            authenticate external
+            <strong> JSON RESTful APIs</strong>; ingesting <strong>100+ JSON payloads</strong> (per
+            run) containing parameters - <strong>normalized & mapped</strong> to feature categories
+            in a <strong>PostgreSQL </strong>
+            database via <strong>SQLAlchemy</strong>
           </>,
           <>
-            Extracted parameters from database using <strong>SQL queries</strong> - joining & loading
-            into pricing pipeline for final product estimate
+            Extracted parameters from database using <strong>SQL queries</strong> - joining &
+            loading into pricing pipeline for final product estimate
           </>,
         ],
         images: [
@@ -325,13 +333,34 @@ const about: About = {
     institutions: [
       {
         name: "University of Texas at Dallas",
-        description: <>
-        <a href="https://catalog.utdallas.edu/2021/undergraduate/programs/ecs/computer-science" target="_blank" rel="noopener noreferrer">Bachelor of Science, Computer Science</a> 
-        <br></br>
-        <br></br>
-        <a href="https://jonsson-framework.utdallas.edu/" target="_blank" rel="noopener noreferrer">Erik Jonsson School of Engineering & Computer Science</a>
-        <br></br>
-        <a href="https://enroll.utdallas.edu/affordability/freshman-scholarships/academic-excellence-scholarship/" target="_blank" rel="noopener noreferrer">UTD Academic Excellence Scholarship</a></>,
+        description: (
+          <>
+            <a
+              href="https://catalog.utdallas.edu/2021/undergraduate/programs/ecs/computer-science"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bachelor of Science, Computer Science
+            </a>
+            <br />
+            <br />
+            <a
+              href="https://jonsson-framework.utdallas.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Erik Jonsson School of Engineering & Computer Science
+            </a>
+            <br />
+            <a
+              href="https://enroll.utdallas.edu/affordability/freshman-scholarships/academic-excellence-scholarship/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              UTD Academic Excellence Scholarship
+            </a>
+          </>
+        ),
         logo: "/trademarks/UTD-Logo.svg",
         institutionLocation: "Dallas, TX",
         timeframe: "2021 - 2025",
@@ -344,10 +373,10 @@ const about: About = {
             height: 9,
           },
           {
-          src: "/images/projects/project-01/UTDArial.jpg",
-          alt: "UTD Campus",
-          width: 16,
-          height: 9,
+            src: "/images/projects/project-01/UTDArial.jpg",
+            alt: "UTD Campus",
+            width: 16,
+            height: 9,
           },
           {
             src: "/images/projects/project-01/UTDCSBUILDING.jpg",
@@ -361,32 +390,94 @@ const about: About = {
             width: 16,
             height: 9,
           },
-        ]
+        ],
       },
       {
         name: "Relevant Coursework",
-        description: <>
-        <a href="https://bpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/a/909/files/2023/07/4YEAR-CS-2021.pdf" target="_blank" rel="noopener noreferrer">DEGREE FLOW CHART</a>
-        <br></br>
-        <br></br>
-        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4349" target="_blank" rel="noopener noreferrer">• Advanced Data Structures & Algorithms</a> 
-        <br></br>
-        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/se4381" target="_blank" rel="noopener noreferrer">• Project Management & Planning</a> 
-        <br></br>
-        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4395" target="_blank" rel="noopener noreferrer">• Natural Language Processing</a> 
-        <br></br>
-        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs3354" target="_blank" rel="noopener noreferrer">• Software Engineering</a>
-        <br></br>
-        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4365" target="_blank" rel="noopener noreferrer">• Artifical Intelligence</a>
-        <br></br>
-        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4348" target="_blank" rel="noopener noreferrer">• Operating Systems</a> 
-        <br></br>
-        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4375" target="_blank" rel="noopener noreferrer">• Machine Learning</a> 
-        <br></br>
-        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4336" target="_blank" rel="noopener noreferrer">• Advanced Java</a>
-        <br></br>
-        <a href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs3377" target="_blank" rel="noopener noreferrer">• Linux/Unix</a>
-        </>,
+        description: (
+          <>
+            <a
+              href="https://bpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/a/909/files/2023/07/4YEAR-CS-2021.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DEGREE FLOW CHART
+            </a>
+            <br />
+            <br />
+            <a
+              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4349"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Advanced Data Structures & Algorithms
+            </a>
+            <br />
+            <a
+              href="https://catalog.utdallas.edu/2021/undergraduate/courses/se4381"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Project Management & Planning
+            </a>
+            <br />
+            <a
+              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4395"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Natural Language Processing
+            </a>
+            <br />
+            <a
+              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs3354"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Software Engineering
+            </a>
+            <br />
+            <a
+              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4365"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Artifical Intelligence
+            </a>
+            <br />
+            <a
+              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4348"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Operating Systems
+            </a>
+            <br />
+            <a
+              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4375"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Machine Learning
+            </a>
+            <br />
+            <a
+              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4336"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Advanced Java
+            </a>
+            <br />
+            <a
+              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs3377"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Linux/Unix
+            </a>
+          </>
+        ),
         logo: "",
         institutionLocation: "",
         timeframe: "",
@@ -394,24 +485,46 @@ const about: About = {
       },
       {
         name: "Organizations",
-        description: <>
-        <a href="https://www.acmutd.co/" target="_blank" rel="noopener noreferrer">• ACM Projects/Research</a>
-        <br></br>
-        <a href="https://hackutd.co/" target="_blank" rel="noopener noreferrer">• HackUTD</a>
-        <br></br>
-        <a href="https://epics.utdallas.edu/" target="_blank" rel="noopener noreferrer">• UTD EPICS</a>
-        <br></br>
-        <a href="https://www.uxutd.com/" target="_blank" rel="noopener noreferrer">• UI/UX Club</a>
-        <br></br>
-        <a href="https://www.instagram.com/aajanachledtx/?hl=en" target="_blank" rel="noopener noreferrer">• Aaja Nachle</a>
-        <br></br>
-        <a href="https://www.instagram.com/depsi_utd/?hl=en" target="_blank" rel="noopener noreferrer">• Delta Epsilon Psi</a>
-        </>,
+        description: (
+          <>
+            <a href="https://www.acmutd.co/" target="_blank" rel="noopener noreferrer">
+              • ACM Projects/Research
+            </a>
+            <br />
+            <a href="https://hackutd.co/" target="_blank" rel="noopener noreferrer">
+              • HackUTD
+            </a>
+            <br />
+            <a href="https://epics.utdallas.edu/" target="_blank" rel="noopener noreferrer">
+              • UTD EPICS
+            </a>
+            <br />
+            <a href="https://www.uxutd.com/" target="_blank" rel="noopener noreferrer">
+              • UI/UX Club
+            </a>
+            <br />
+            <a
+              href="https://www.instagram.com/aajanachledtx/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Aaja Nachle
+            </a>
+            <br />
+            <a
+              href="https://www.instagram.com/depsi_utd/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Delta Epsilon Psi
+            </a>
+          </>
+        ),
         logo: "",
         institutionLocation: "",
         timeframe: "",
         link: "",
-      }
+      },
     ],
   },
   technical: {
@@ -421,10 +534,9 @@ const about: About = {
     skills: [
       {
         title: "Languages",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [ // Java, Python, SQL, JavaScript, TypeScript, HTML/CSS
+        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        tags: [
+          // Java, Python, SQL, JavaScript, TypeScript, HTML/CSS
           {
             name: "Java",
             icon: "java",
@@ -456,9 +568,12 @@ const about: About = {
       {
         title: "Frameworks & Libraries",
         description: (
-          <><strong>Java</strong></>
+          <>
+            <strong>Java</strong>
+          </>
         ),
-        tags: [// Java: Spring Boot, Javalin, Maven, Swagger,
+        tags: [
+          // Java: Spring Boot, Javalin, Maven, Swagger,
           {
             name: "Spring Boot",
             icon: "springboot",
@@ -481,10 +596,12 @@ const about: About = {
       {
         title: "",
         description: (
-          <><strong>Python</strong></>
+          <>
+            <strong>Python</strong>
+          </>
         ),
-        tags: [ 
-        // Python: NLTK, Beautiful Soup, PyTorch, TensorFlow, Keras, Scikit-learn, Matplotlib, Pandas, SciPy
+        tags: [
+          // Python: NLTK, Beautiful Soup, PyTorch, TensorFlow, Keras, Scikit-learn, Matplotlib, Pandas, SciPy
           {
             name: "NLTK",
             icon: "nltk",
@@ -524,13 +641,16 @@ const about: About = {
         ],
         // optional: leave the array empty if you don't want to display images
         images: [],
-      }, 
+      },
       {
         title: "",
         description: (
-          <><strong>JavaScript</strong></>
+          <>
+            <strong>JavaScript</strong>
+          </>
         ),
-        tags: [// Javascript: TypeScript, React.js, Next.js, Node.js, NPM, Angular
+        tags: [
+          // Javascript: TypeScript, React.js, Next.js, Node.js, NPM, Angular
           {
             name: "TypeScript",
             icon: "typescript",
@@ -561,9 +681,12 @@ const about: About = {
       {
         title: "",
         description: (
-          <><strong>RDBMS</strong></>
+          <>
+            <strong>RDBMS</strong>
+          </>
         ),
-        tags: [// SQL: SQL, SQLite, PostgreSQL
+        tags: [
+          // SQL: SQL, SQLite, PostgreSQL
           {
             name: "SQL",
             icon: "sql",
@@ -582,10 +705,13 @@ const about: About = {
       {
         title: "Additional Developer Tools",
         description: (
-          <><strong>Developement Tools & IDE</strong></>
+          <>
+            <strong>Developement Tools & IDE</strong>
+          </>
         ),
-        tags: [// Tools: VS Code, GitHub, Git, Jira, Agile, Scrum, Confluence, 
-                // BitBucket, DevTools, Docker, Kubernetes, Kafka, Postman, cURL, Jupyter Notebook, Anaconda, HuggingFace
+        tags: [
+          // Tools: VS Code, GitHub, Git, Jira, Agile, Scrum, Confluence,
+          // BitBucket, DevTools, Docker, Kubernetes, Kafka, Postman, cURL, Jupyter Notebook, Anaconda, HuggingFace
           {
             name: "VS Code",
             icon: "vscode",
@@ -600,7 +726,9 @@ const about: About = {
       {
         title: "",
         description: (
-          <><strong>Version Control & Repository Management</strong></>
+          <>
+            <strong>Version Control & Repository Management</strong>
+          </>
         ),
         tags: [
           {
@@ -621,7 +749,9 @@ const about: About = {
       {
         title: "",
         description: (
-          <><strong>Project Management & SDLC</strong></>
+          <>
+            <strong>Project Management & SDLC</strong>
+          </>
         ),
         tags: [
           {
@@ -642,7 +772,9 @@ const about: About = {
       {
         title: "",
         description: (
-          <><strong>DevOps & Infrastructure</strong></>
+          <>
+            <strong>DevOps & Infrastructure</strong>
+          </>
         ),
         tags: [
           {
@@ -663,7 +795,9 @@ const about: About = {
       {
         title: "",
         description: (
-          <><strong>Microsoft Office Suite</strong></>
+          <>
+            <strong>Microsoft Office Suite</strong>
+          </>
         ),
         tags: [
           {
@@ -700,7 +834,7 @@ const about: About = {
           },
         ],
         images: [],
-      }
+      },
     ],
   },
 };
@@ -1058,7 +1192,7 @@ const gallery: Gallery = {
     {
       src: "/images/gallery/AnjaliBday.jpeg",
       alt: "Anjali's Birthday",
-      orientation: "horizontal", 
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/NewYears.jpeg",

@@ -1,4 +1,4 @@
-import {
+import type {
   DataStyleConfig,
   DisplayConfig,
   EffectsConfig,
@@ -199,7 +199,7 @@ const sameAs: SameAsConfig = {
   yelp: "https://www.yelp.com/user_details_reviews_self?userid=oxPbe4rm1Zd0glvI4gq0LQ",
   linkedin: "https://www.linkedin.com/in/navidalvey/",
   discord: "https://discord.com/invite/5EyAQ4eNdS",
-  spotify: "https://open.spotify.com/user/navidalvey?si=02fe420a96fa47dd"
+  spotify: "https://open.spotify.com/user/navidalvey?si=02fe420a96fa47dd",
 };
 
 // social sharing configuration for blog posts
