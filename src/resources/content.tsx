@@ -834,7 +834,7 @@ const about: About = {
     ],
   },
 };
-
+/*
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
@@ -843,7 +843,7 @@ const blog: Blog = {
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
-
+*/
 const work: Work = {
   path: "/work",
   label: "Projects",
@@ -1203,4 +1203,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, /*blog,*/ work, gallery };
