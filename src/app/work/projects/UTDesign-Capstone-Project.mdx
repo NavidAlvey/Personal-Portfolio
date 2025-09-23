@@ -1,10 +1,10 @@
 ---
-title: "UTDesign & XONA Partners - Senior Capstone 5G Data Analytics Pipelining"
+title: "UTDesign & XONA Partners: Senior Capstone 5G Data Analytics Pipelining"
 publishedAt: "2025-03-21"
 summary: "• Built a back-end focused containerized data pipeline leveraging Docker, Kafka, & Mage.ai – orchestrating batch/streaming data ingestion from Kafka topics into a structured SQLite database for downstream developer analysis and manipulation
 
 
-• Engineered Kafka producers and dynamic data generators in Python, creating autonomous workflows to simulate diverse JSON batch payloads and optimize Kafka consumer throughput by 20% measured by expedited task runtimeimages"
+• Engineered Kafka producers and dynamic data generators in Python, creating autonomous workflows to simulate diverse JSON batch payloads and optimize Kafka consumer throughput by 20% measured by expedited task runtime"
 images:
   - "/images/projects-02/T4-data-pipeline-README.png"
   - "/images/projects-02/T4-ReadMes.png"
@@ -36,26 +36,36 @@ link: "https://github.com/griflot/T4-data-pipeline"
 
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+Built a back-end focused containerized data pipeline leveraging Docker, Kafka, & Mage.ai – orchestrating batch/streaming data ingestion from Kafka topics into a structured SQLite database for downstream developer analysis and manipulation
+
+Engineered Kafka producers and dynamic data generators in Python, creating autonomous workflows to simulate diverse JSON batch payloads and optimize Kafka consumer throughput by 20% measured by expedited task runtime
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **Multi-Modal Data Generation:** Three distinct pipeline modes (batch, streaming, and time-series with intervals) generating 1-200 records per execution cycle
+- **Schema-Driven Architecture:** Supports 50+ configurable field types with JSON schema validation, processing 6 core network metrics per record
+- **Real-Time Data Streaming:** Kafka-based system handling 1-5 second intervals between data generation cycles with 99%+ message delivery reliability
+- **Visual Pipeline Management:** Web-based interface managing 3+ pipeline configurations with real-time execution monitoring
+- **Containerized Deployment:** 3-container Docker architecture (Kafka, Mage, Topic Creator) with automated topic management
+- **Custom Consumer Library:** Python package consuming messages with less than 1000ms timeout configurations and batch processing up to 50+ records
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- **Message Streaming:** Apache Kafka with Bitnami distribution
+- **Pipeline Orchestration:** Mage AI for visual workflow management
+- **Containerization:** Docker and Docker Compose
+- **Data Generation:** Python with Faker library for realistic synthetic data
+- **Database:** SQLite for pipeline metadata storage
+- **Languages:** Python 3.9+ with kafka-python, pandas, and custom libraries
 
 ## Challenges and Learnings
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+- **Docker Networking Configuration:** Resolved complex Kafka broker connectivity issues between containers and host system, learning proper network configuration for multi-service Docker applications
+- **Temporal Data Consistency:** Implemented precise time-series generation logic to ensure realistic timestamp progression across batches, crucial for time-based analytics
+- **Kafka Consumer Offset Management:** Handled consumer group configuration and offset reset strategies to ensure reliable message consumption patterns
+- **Schema Flexibility:** Designed extensible data generation system supporting 50+ field types while maintaining performance and configurability
+- **Authentication Bypass:** Navigated Mage AI authentication configuration in containerized environments to enable development access
 
 ## Outcome
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+Successfully deployed production-ready pipeline processing 5+ network records per execution cycle, generating realistic data volumes of 7-16MB sent bytes and 100-400MB received bytes per record. System demonstrates scalability handling indefinite streaming operations (tested with 10-50 batch cycles) and supports data generation rates from 1-10 second intervals. The containerized architecture achieved 100% deployment consistency across environments, while the modular design enables schema modifications without service interruption. Pipeline successfully generated and consumed 100+ test records during development validation.
