@@ -73,14 +73,10 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
+        <strong className="ml-4">Navid Alvey Resume</strong>{" "}
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "https://drive.google.com/file/d/13Im6N-PbPOl2HuSFkKS7suO9y3Xhf4Cp/view?usp=sharing",
   },
   subline: (
     <>
@@ -104,7 +100,7 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendly.com/navidalvey/new-meeting",
   },
   intro: {
     display: true,
