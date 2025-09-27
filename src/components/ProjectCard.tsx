@@ -21,6 +21,11 @@ interface ProjectCardProps {
   link: string;
 }
 
+// Helper function to convert **text** to <strong>text</strong>
+const processMarkdownBold = (text: string): string => {
+  return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+};
+
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   href,
   images = [],
@@ -58,9 +63,17 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           <Column flex={7} gap="16">
             {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
             {description?.trim() && (
-              <Text wrap="balance" variant="body-default-m" onBackground="neutral-weak" style={{ whiteSpace: 'pre-line' }}>
-                {description}
-              </Text>
+              <div 
+                style={{ 
+                  whiteSpace: 'pre-line',
+                  color: '#C7C7C7', // or whatever color you want
+                  fontSize: '1rem',
+                  lineHeight: '1.5'
+                }}
+                dangerouslySetInnerHTML={{ 
+                  __html: processMarkdownBold(description) 
+                }}
+              />
             )}
             <Flex gap="24" wrap>
               {content?.trim() && (

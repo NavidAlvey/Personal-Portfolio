@@ -1,0 +1,60 @@
+---
+title: "Bookmark Manager with MCP Agent & Clerk Authentication Integration"
+publishedAt: "2025-04-7"
+summary: "• Developed a **Next.js/TypeScript** bookmark management platform with **MCP (Model Context Protocol)** integration, enabling **AI** assistants like **Cursor** to programmatically interact with user data through **authenticated API tools** for application management
+
+
+• Implemented **OAuth 2.0** authentication flow using **Clerk's MCP tools** with **15 discovery endpoints**, securing user data isolation through **token verification** while maintaining **SQLite/Prisma** database operations for **multi-user** bookmark storage and management"
+images:
+  - "/images/projects-02/MCP-Diagram.png"
+  - "/images/projects-02/Bookmark-UI.png"
+  - "/images/projects-02/Clerk-Login.png"
+  - "/images/projects-02/Clerk-Dashboard.png"
+  - "/images/projects-02/Cursor-Output-1.png"
+  - "/images/projects-02/Cursor-Output-2.png"
+  - "/images/projects-02/Cursor-Output-3.png"
+  - "/images/projects-02/PrismaDB.png"
+  - "/images/projects-02/MCP-Code-1.png"
+  - "/images/projects-02/MCP-Code-2.png"
+team:
+  - name: "Navid Alvey"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://github.com/NavidAlvey"
+link: "https://github.com/NavidAlvey/MCP_Agent"
+---
+
+## Overview
+
+This project is a Next.js-based bookmark management application that demonstrates the integration of Model Context Protocol (MCP) with Clerk's authentication system. The application allows users to create, read, and delete bookmarks through both a traditional web interface and programmatic MCP tools, showcasing how AI assistants can interact with authenticated web applications through standardized protocols.
+
+The project serves as a practical implementation of MCP's capabilities, enabling AI tools like Cursor to directly interact with user data through authenticated API endpoints while maintaining security through Clerk's OAuth-based authentication flow.
+
+## Key Features
+
+- **MCP Server Implementation**: Exposes get-user-bookmarks and create-bookmark tools for AI assistant integration through Cursor or Claude Desktop
+- **Clerk MCP Authentication**: Implements OAuth 2.0 protected resource endpoints with proper token verification (HAS A TON OF VERY HELPFUL DOCUMENTATION!)
+- **Secure User Isolation**: Each user's bookmarks are protected and accessible only with proper authentication through Clerk login
+- **Real-time CRUD Operations**: Full bookmark management with various functionalities like create, read, and delete
+- **Prisma Database Integration**: Type-safe database operations with SQLite backend
+
+## Technologies Used
+
+- **Next.js 15**: Full-stack React framework with API routes and server-side rendering
+- **Cursor**: AI-powered code editor that can interact with the MCP server endpoints
+- **MCP (Model Context Protocol)**: Protocol enabling AI assistants to securely access application data
+- **Clerk**: Authentication provider with specialized MCP OAuth implementation
+- **Prisma**: Clean & nice with various utilities and compatibility with databases like SQLite, PostgreSQL, MySQL, etc.
+
+## Challenges and Learnings
+
+- Implementing OAuth 2.0 flow specifically designed for MCP tool authentication
+- Configuring MCP metadata endpoints for service discovery by AI tools
+- Understanding the distinction between traditional web auth and MCP-specific authentication patterns
+- Debugging token verification and scope management for protected MCP resources
+- Learned about the uniqe differences between REST APIs and MCPs (when to use which one!)
+
+## Outcome
+
+Overall, learning MCPs is definitely useful and interesting, but its primarily used for attaching an LLM like Cursor or Claude Desktop to a local project. Getting AI assistance or running commands through an LLM to implement features within your local program has a ton of applications, but its most of all a quality of life thing for developers to get easy and fast answers to certain things within the project.
+

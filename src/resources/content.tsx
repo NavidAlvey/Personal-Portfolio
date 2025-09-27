@@ -107,14 +107,14 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        I'm a software engineer with a passion for transforming comlex challenges intro simple,
+        I'm a software engineer with a passion for transforming complex challenges into simple,
         elegant solutions using tools like Java and Python. I've worked with industry leading
         companies to deliver innovative software that serves millions of users worldwide.
         <br />
         <br />
-        Beyond code, I'm driven by curiosity and growth; whether that's exploring emerging
+        Beyond code, I'm driven by curiosity and growth; whether that's learning about emerging
         technologies, discovering new foods, or immersing myself in new cultures through travel. My
-        portfolio captures both my technical journey and the experiences that fuel my creativity and
+        portfolio captures both my technical experience and personal journey which fuel my creativity and
         perspective as an engineer.
       </>
     ),
@@ -149,7 +149,6 @@ const about: About = {
         workLocation: "Richardson, TX",
         role: "AI/ML Researcher - Human Genome Sequencing",
         logo: "/trademarks/UTD-Logo.svg",
-        link: "https://caiml.utdallas.edu/",
         achievements: [
           <>
             Built <strong>scalable data pipelines</strong> in <strong>Python & Linux</strong> to
@@ -203,7 +202,6 @@ const about: About = {
         workLocation: "Southlake, TX",
         role: "Software Engineering Intern - Wealth Asset Management",
         logo: "/trademarks/Schwab-Logo.svg",
-        link: "https://www.schwabjobs.com/internship-academy",
         achievements: [
           <>
             {/*
@@ -264,7 +262,6 @@ const about: About = {
         workLocation: "Plano, TX",
         role: "Software Engineering Intern - Consumer Pricing & Finance Programs",
         logo: "/trademarks/Toyota-Logo.svg",
-        link: "https://careers.toyota.com/us/en/students",
         achievements: [
           <>
             {/*
@@ -331,36 +328,17 @@ const about: About = {
         name: "University of Texas at Dallas",
         description: (
           <>
-            <a
-              href="https://catalog.utdallas.edu/2021/undergraduate/programs/ecs/computer-science"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               Bachelor of Science, Computer Science
-            </a>
             <br />
             <br />
-            <a
-              href="https://jonsson-framework.utdallas.edu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               Erik Jonsson School of Engineering & Computer Science
-            </a>
             <br />
-            <a
-              href="https://enroll.utdallas.edu/affordability/freshman-scholarships/academic-excellence-scholarship/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               UTD Academic Excellence Scholarship
-            </a>
           </>
         ),
         logo: "/trademarks/UTD-Logo.svg",
         institutionLocation: "Dallas, TX",
         timeframe: "2021 - 2025",
-        link: "https://cs.utdallas.edu/",
         images: [
           {
             src: "/images/projects/project-01/Diploma.png",
@@ -401,83 +379,28 @@ const about: About = {
             </a>
             <br />
             <br />
-            <a
-              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4349"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               • Advanced Data Structures & Algorithms
-            </a>
             <br />
-            <a
-              href="https://catalog.utdallas.edu/2021/undergraduate/courses/se4381"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               • Project Management & Planning
-            </a>
             <br />
-            <a
-              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4395"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               • Natural Language Processing
-            </a>
             <br />
-            <a
-              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs3354"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               • Software Engineering
-            </a>
             <br />
-            <a
-              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4365"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               • Artifical Intelligence
-            </a>
             <br />
-            <a
-              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4348"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               • Operating Systems
-            </a>
             <br />
-            <a
-              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4375"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               • Machine Learning
-            </a>
             <br />
-            <a
-              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs4336"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               • Advanced Java
-            </a>
             <br />
-            <a
-              href="https://catalog.utdallas.edu/2021/undergraduate/courses/cs3377"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               • Linux/Unix
-            </a>
           </>
         ),
         logo: "",
         institutionLocation: "",
         timeframe: "",
-        link: "",
       },
       {
         name: "Organizations",
@@ -519,7 +442,6 @@ const about: About = {
         logo: "",
         institutionLocation: "",
         timeframe: "",
-        link: "",
       },
     ],
   },
@@ -530,7 +452,7 @@ const about: About = {
     skills: [
       {
         title: "Languages",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        description: <></>,
         tags: [
           // Java, Python, SQL, JavaScript, TypeScript, HTML/CSS
           {
