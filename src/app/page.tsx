@@ -9,6 +9,7 @@ import {
   Column,
   Heading,
   Line,
+  Media,
   Meta,
   RevealFx,
   Row,
@@ -100,6 +101,58 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
+      <Column fillWidth gap="24" marginBottom="s">
+          <Row fillWidth paddingRight="64">
+            <Line maxWidth={48} />
+          </Row>
+          <Row fillWidth paddingTop="s" paddingBottom="s" gap="12" wrap horizontal="center">
+            <Row
+              border="neutral-medium"
+              radius="m"
+              minWidth={20}
+              height={11}
+            >
+              <Media
+                enlarge
+                radius="m"
+                sizes="20"
+                alt="Fam Selfie"
+                src="/images/gallery/Fam-selfie.jpg"
+              />
+            </Row>
+            <Row
+              border="neutral-medium"
+              radius="m"
+              minWidth={11}
+              height={11}
+            >
+              <Media
+                enlarge
+                radius="m"
+                sizes="20"
+                alt="Me asf"
+                src="/images/avatar.jpg"
+              />
+            </Row>
+            <Row
+              border="neutral-medium"
+              radius="m"
+              minWidth={20}
+              height={11}
+            >
+              <Media
+                enlarge
+                radius="m"
+                sizes="20"
+                alt="Pepsi Cola sign, NY"
+                src="/images/gallery/PepsiCola.jpg"
+              />
+            </Row>
+          </Row>
+          <Row fillWidth paddingLeft="64" horizontal="end">
+            <Line maxWidth={48} />
+          </Row>
+        </Column>
       <RevealFx translateY="16" delay={0.6}>
         <Projects range={[1, 1]} />
       </RevealFx>
@@ -108,14 +161,48 @@ export default function Home() {
           <Row fillWidth paddingRight="64">
             <Line maxWidth={48} />
           </Row>
-          <Row fillWidth gap="24" marginTop="40" s={{ direction: "column" }}>
-            <Row flex={1} paddingLeft="l" paddingTop="24">
-              <Heading as="h2" variant="display-strong-xs" wrap="balance">
-                My latest updates
-              </Heading>
+          <Row fillWidth paddingTop="m" paddingBottom="l" gap="12" wrap horizontal="center">
+            <Row
+              border="neutral-medium"
+              radius="m"
+              minWidth={20}
+              height={11}
+            >
+              <Media
+                enlarge
+                radius="m"
+                sizes="20"
+                alt="FB Winter Photos"
+                src="/images/gallery/WinterBoys.JPG"
+              />
             </Row>
-            <Row flex={3} paddingX="20">
-              <Posts range={[1, 2]} columns="2" />
+            <Row
+              border="neutral-medium"
+              radius="m"
+              minWidth={20}
+              height={11}
+            >
+              <Media
+                enlarge
+                radius="m"
+                sizes="20"
+                alt="Alvey in a BMW i8"
+                src="/images/gallery/BMWi8.jpeg"
+              />
+            </Row>
+            <Row
+              border="neutral-medium"
+              radius="m"
+              minWidth={20}
+              height={11}
+            >
+              <Media
+                enlarge
+                radius="m"
+                sizes="20"
+                alt="Large family photo at Nasa"
+                src="/images/gallery/Nasa.JPG"
+              />
             </Row>
           </Row>
           <Row fillWidth paddingLeft="64" horizontal="end">
@@ -123,7 +210,60 @@ export default function Home() {
           </Row>
         </Column>
       )}
-      <Projects range={[2]} />
+      <Projects range={[2, 2]} />
+      <Column fillWidth gap="24" marginBottom="l">
+          <Row fillWidth paddingRight="64">
+            <Line maxWidth={48} />
+          </Row>
+          <Row fillWidth paddingTop="m" paddingBottom="l" gap="12" wrap horizontal="center">
+            <Row
+              border="neutral-medium"
+              radius="m"
+              minWidth={20}
+              height={11}
+            >
+              <Media
+                enlarge
+                radius="m"
+                sizes="20"
+                alt="Skelligs"
+                src="/images/gallery/Skelligs.jpg"
+              />
+            </Row>
+            <Row
+              border="neutral-medium"
+              radius="m"
+              minWidth={20}
+              height={11}
+            >
+              <Media
+                enlarge
+                radius="m"
+                sizes="20"
+                alt="FB Glade Lights"
+                src="/images/gallery/GladeLights.jpeg"
+              />
+            </Row>
+            <Row
+              border="neutral-medium"
+              radius="m"
+              minWidth={20}
+              height={11}
+            >
+              <Media
+                enlarge
+                radius="m"
+                sizes="20"
+                alt="Don Toliver Concert"
+                src="/images/gallery/DonGlow.jpg"
+              />
+            </Row>
+          </Row>
+          <Row fillWidth paddingLeft="64" horizontal="end">
+            <Line maxWidth={48} />
+          </Row>
+        </Column>
+        <Projects range={[3, 3]} />
       <Mailchimp />
     </Column>
   );
