@@ -72,6 +72,8 @@ export interface BasePageConfig {
    *
    * The path should be relative to the public directory
    */
+  // Display Base Config feature?
+  display: boolean;
   path: `/${string}` | string;
   /** Label for navigation or display */
   label: string;

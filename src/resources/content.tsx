@@ -63,6 +63,7 @@ const social: Social = [
 ];
 
 const home: Home = {
+  display: true,
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
@@ -87,6 +88,7 @@ const home: Home = {
 };
 
 const about: About = {
+  display: true,
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
@@ -756,8 +758,8 @@ const about: About = {
     ],
   },
 };
-/*
 const blog: Blog = {
+  display: false,
   path: "/blog",
   label: "Blog",
   title: "Writing about design and tech...",
@@ -765,8 +767,8 @@ const blog: Blog = {
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
-*/
 const work: Work = {
+  display: true,
   path: "/work",
   label: "Projects",
   title: `Projects – ${person.name}`,
@@ -776,6 +778,7 @@ const work: Work = {
 };
 
 const gallery: Gallery = {
+  display: true,
   path: "/gallery",
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
@@ -1125,4 +1128,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, /*blog,*/ work, gallery };
+export { person, social, newsletter, home, about, blog, work, gallery };
