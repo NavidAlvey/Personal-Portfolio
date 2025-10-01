@@ -77,7 +77,7 @@ const home: Home = {
         <strong className="ml-4">Navid Alvey Resume</strong>{" "}
       </Row>
     ),
-    href: "https://drive.google.com/file/d/13Im6N-PbPOl2HuSFkKS7suO9y3Xhf4Cp/view?usp=sharing",
+    href: "https://drive.google.com/drive/folders/1_W9vML9CmrbUVA0RFTZxhhNDV6RWxkN1?usp=sharing",
   },
   subline: (
     <>
